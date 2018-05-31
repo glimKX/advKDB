@@ -1,4 +1,9 @@
-/q tick/r.q [host]:port[:usr:pwd] [host]:port[:usr:pwd]
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//	Modify r.q template to accept tables for subscription										//
+//	Input of table format must be string, this can be handled in the bash script that init this	//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+/q tick/r.q [host]:port[:usr:pwd] [host]:port[:usr:pwd] -table "table1;table2;table3"
 /2008.09.09 .k ->.q
 
 if[not "w"=first string .z.o;system "sleep 1"];
@@ -7,14 +12,17 @@ upd:insert;
 
 / get the ticker plant and history ports, defaults are 5010,5012
 .u.x:.z.x,(count .z.x)_(":5010";":5012");
-
+/ tables to subscribe to
+.u.tSub:$["-table" in .u.x;raze "`",/:raze";" vs' .Q.opt[.u.x]`table;"`"];
 / end of day: save, clear, hdb reload
 .u.end:{t:tables`.;t@:where `g=attr each t@\:`sym;.Q.hdpf[`$":",.u.x 1;`:.;x;`sym];@[;`sym;`g#] each t;};
 
 / init schema and sync up from log file;cd to hdb(so client save can run)
-.u.rep:{(.[;();:;].)each x;if[null first y;:()];-11!y;system "cd ",1_-10_string first reverse y};
+.u.rep:{if[any 2<>count each x;x:enlist x];(.[;();:;].)each x;if[null first y;:()];-11!y;system "cd ",1_-10_string first reverse y};
 / HARDCODE \cd if other than logdir/db
 
 / connect to ticker plant for (schema;(logcount;log))
-.u.rep .(hopen `$":",.u.x 0)"(.u.sub[`;`];`.u `i`L)";
+/ this changes such that the rdb is able to choose what it subscribes to
+
+.u.rep .(hopen `$":",.u.x 0)"(.u.sub[;`] each ",.u.tSub,";`.u `i`L)";
 
