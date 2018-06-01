@@ -51,7 +51,7 @@ then
 #	then
 		info "Initialising RDB1 and subscribing to trade and quote"
 		($q tick/r.q :5010 -table "trade;quote" -p 5011 > /dev/null 2>&1 &)
-		sleep 1
+		sleep 2
 		if [[ ! -z $(ps -ef|grep 5010|grep 5011|grep r.q) ]]
 		then 
 		info "RDB1 started on port 5011"
@@ -63,7 +63,7 @@ then
 #	then 
 		info "Initialising RDB2 and subscribing to aggregrate"
 		($q tick/r.q :5010 -table "aggreg" -p 5013 > /dev/null 2>&1 &)
-		sleep 1
+		sleep 2  
 		if [[ ! -z $(ps -ef|grep 5010|grep 5013|grep r.q) ]]
 		then
 		info "RDB2 started on port 5013"
