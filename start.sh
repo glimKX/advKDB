@@ -57,6 +57,7 @@ else
 fi
 printLines
 info "Check for existing rdb"
+printLines
 if [[ -z $(ps -ef | grep 5010 | grep rdb.q) ]]
 then
 	info "No Existing RDB found"
@@ -64,4 +65,15 @@ then
 	bash rdb.sh
 else
 	warn "Existing RDB found, not starting RDBs"
+fi
+printLines
+info "Check for existing feedHandler"
+printLines
+if [[ -z $(ps -ef | grep 5010 | grep feed.q) ]]
+then
+	info "No Existing FeedHandler found"
+	info "Starting FeedHandler"
+	bash feed.sh
+else
+	warn "Existing FeedHandler found, not starting FeedHandler"
 fi

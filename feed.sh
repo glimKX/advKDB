@@ -41,9 +41,9 @@ q=$(find ~ -name q | grep l32)
 if [[ ! -z "$q" ]]
 then 
 	info "Found q app $q" 
-	info "Initialising TickerPlant with predefined schemas"
-	nohup $q tick.q sym tplog -p 5010 -t 1000 > /dev/null 2>&1 &
-	info "TickerPlant started on port 5010"
+	info "Initialising FeedHandler with predefined timer" 
+	nohup $q feed.q :5010 -p 5020 -t 1000 > /dev/null 2>&1 &
+	info "FeedHandler started on port 5020"
 else
 	err "q is missing"
 	exit 1
