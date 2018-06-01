@@ -43,7 +43,14 @@ then
 	info "Found q app $q" 
 	info "Initialising FeedHandler with predefined timer" 
 	nohup $q feed.q :5010 -p 5020 -t 1000 > /dev/null 2>&1 &
-	info "FeedHandler started on port 5020"
+	sleep 2
+	if [[ ! -z $(ps -ef | grep 5010 | grep feed.q) ]]
+	then
+		info "FeedHandler started on port 5020"
+	else
+		err "FeedHandler failed to start"	
+		exit 1
+	fi
 else
 	err "q is missing"
 	exit 1

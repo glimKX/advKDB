@@ -43,7 +43,13 @@ then
 	info "Found q app $q" 
 	info "Initialising TickerPlant with predefined schemas"
 	nohup $q tick.q sym tplog -p 5010 -t 1000 > /dev/null 2>&1 &
-	info "TickerPlant started on port 5010"
+	sleep 2
+	if [[ ! -z $(ps -ef | grep 5010 | grep tick.q) ]]
+	then
+		info "TickerPlant started on port 5010"
+	else
+		err "TIckerPlant failed to start"	
+	fi
 else
 	err "q is missing"
 	exit 1

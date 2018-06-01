@@ -15,14 +15,14 @@ rng:`sym`size`price!(10?`3;50;(10.0 3000.0));
 /note that ask price should be 
 generateQuoteData:{
 	i:first 5+1?30;
-	(@[quote;;:;] .) (`time`sym`bidSize`bidPrice`askSize`askPrice;
+	value flip (@[quote;;:;] .) (`time`sym`bidSize`bidPrice`askSize`askPrice;
 	(i#"n"$.z.P;i?rng`sym;rng[`size]*1+i?9;m+i?max[rng[`price]] - m:min rng`price;rng[`size]*1+i?9;m+i?max[rng[`price]] - m:min rng`price))
 	};
 /generate random batch of data for trade
 generateTradeData:{
 	i:first 5+1?20;
-	(@[trade;;:;] .) (`time`sym`size`price;(i#"n"$.z.P;i?rng`sym;rng[`size]*1+i?9;m+i?max[rng[`price]] - m:min rng`price))
+	value flip (@[trade;;:;] .) (`time`sym`size`price;(i#"n"$.z.P;i?rng`sym;rng[`size]*1+i?9;m+i?max[rng[`price]] - m:min rng`price))
 	};
 
 /Timer to control data generation
-.z.ts:{h(`.u.upd;(`trade;generateTradeData[]));h(`.u.upd;(`quote;generateQuoteData[]))};
+.z.ts:{h(`.u.upd;`trade;generateTradeData[]);h(`.u.upd;`quote;generateQuoteData[])};
