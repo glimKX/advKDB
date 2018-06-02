@@ -17,12 +17,19 @@ if[not "w"=first string .z.o;system "sleep 1"];
 .u.end:{t:tables`.;t@:where `g=attr each t@\:`sym;.Q.hdpf[`$":",.u.x 1;`:.;x;`sym];@[;`sym;`g#] each t;};
 
 / init schema and sync up from log file;cd to hdb(so client save can run)
-upd:{[t;x] if[t in value .u.tSub;$[t=`aggreg;t upsert x;t insert x;]]};
-.u.rep:{if[any 2<>count each x;x:enlist x];(.[;();:;].)each x;if[null first y;:()];-11!y;system "cd ",1_-10_string first reverse y};
+//update upd such that if data is aggreg, it will manipulate it
+//it might be faster to have many q scripts with customised/optimised upd for millisecond reductions
+//convoluted upd to ensure that upsert maintains the latest data
+upd:{[t;x] if[t in value .u.tSub;$[t=`aggreg;$[0=type x;t upsert `sym xkey `time`sym xcol flip (cols[t])!x;t upsert `sym xkey x];t insert x;]]};
+.u.rep:{if[any 2<>count each x;x:enlist x];(.[;();:;].)each x;if[null first y;:()];if[`aggreg in value .u.tSub;`sym xkey `aggreg];-11!y;system "cd ",1_-10_string first reverse y};
 / HARDCODE \cd if other than logdir/db
 
 / connect to ticker plant for (schema;(logcount;log))
 / this changes such that the rdb is able to choose what it subscribes to
 
 .u.rep .(hopen `$":",.u.x 0)"(.u.sub[;`] each ",.u.tSub,";`.u `i`L)";
+
+/initialise aggreg keyed on sym so that upsert will always maintain the latest statistics
+/error trapped so that it will not error out if rdb does not subscribes to aggreg table
+
 
