@@ -20,7 +20,7 @@ if[not "w"=first string .z.o;system "sleep 1"];
 //update upd such that if data is aggreg, it will manipulate it
 //it might be faster to have many q scripts with customised/optimised upd for millisecond reductions
 //convoluted upd to ensure that upsert maintains the latest data
-upd:{[t;x] if[t in value .u.tSub;$[t=`aggreg;$[0=type x;t upsert `sym xkey `time`sym xcol flip (cols[t])!x;t upsert `sym xkey x];t insert x;]]};
+upd:{[t;x] if[t in value .u.tSub;$[t=`aggreg;$[0=type x;t upsert `sym xkey `time`sym xcol flip (cols[t])!x;t upsert `sym xkey x];t insert x]]};
 .u.rep:{if[any 2<>count each x;x:enlist x];(.[;();:;].)each x;if[null first y;:()];if[`aggreg in value .u.tSub;`sym xkey `aggreg];-11!y;system "cd ",1_-10_string first reverse y};
 / HARDCODE \cd if other than logdir/db
 
