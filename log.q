@@ -9,21 +9,24 @@
 /when connection is opened, collect from handle the following information
 /datetime username hostname ipaddress connection duration
 /collect data from .z.po
-.z.po:{[w] `.log.connections insert ("z"$.z.P),w["(.z.u;.Q.host .z.a;\".\" sv string \"h\"$0x0 vs .z.a)"],`opened,w,0Nv};
+.z.po:{`.log.connections insert .z.Z,.z.u,(.Q.host .z.a;"." sv string "h"$0x0 vs .z.a),`opened,.z.w,0Nv;.log.out .log.co .z.w};
 
 /when connection is closed, update connection to closed
-.z.pc:{[w] update connection:`closed,duration:"v"$("z"$.z.P)-dateTime from `.log.connections where handle = w};
+.z.pc:{update connection:`closed,duration:"v"$80000*.z.Z-dateTime from `.log.connections where handle = .z.w;.log.out .log.cc .z.w};
 
 /need unique name for each log file
-.log.file:`;
-.log.processName:"";
+.log.AllProcessName:(5010;5011;5013;5020)!`tickerPlant`RDB1`RDB2`FeedHandler;
+.log.processName:.log.AllProcessName system"p";
+.log.file:hopen `$":log/",string[.log.processName],".log";
 
-.log.string:{.log.processName," ## ",string[.z.P]," ## ",x," \n"};
+.log.string:{string[.log.processName]," ## ",string[.z.P]," ## ",x," \n"};
 /capture initalised time
 .log.time:.z.T;
 /declare log output function
 .log.out:{.log.file "INFO: ",.log.string x};
 .log.err:{.log.file "ERROR: ",.log.string x};
  
- 
- 
+\c 200 200
+
+.log.cc:{[w] "Connection closed \n",.Q.s select from .log.connections where handle = w};
+.log.co:{[w] "Connection opened \n",.Q.s select from .log.connections where handle = w}; 

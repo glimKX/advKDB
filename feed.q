@@ -5,7 +5,8 @@
 h:hopen "J"$1_first .u.x:.z.x,count[.z.x]_enlist ":5010";
 /mockFeedhandler, hence data is randomly generated;
 /generate data base on dictionary schema
-rng:`sym`size`price!(10?`3;50;(10.0 3000.0));
+ticks:`$"," vs raze read0 `:feed.csv;
+rng:`sym`size`price!(ticks;50;(10.0 3000.0));
 /load table schema;
 \l tick/sym.q
 \l tick/u.q

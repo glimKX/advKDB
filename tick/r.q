@@ -16,6 +16,9 @@ if[not "w"=first string .z.o;system "sleep 1"];
 / end of day: save, clear, hdb reload
 .u.end:{t:tables`.;t@:where `g=attr each t@\:`sym;.Q.hdpf[`$":",.u.x 1;`:.;x;`sym];@[;`sym;`g#] each t;};
 
+/ load logging capability
+\l log.q
+
 / init schema and sync up from log file;cd to hdb(so client save can run)
 //update upd such that if data is aggreg, it will manipulate it
 //it might be faster to have many q scripts with customised/optimised upd for millisecond reductions
@@ -31,5 +34,4 @@ upd:{[t;x] if[t in value .u.tSub;$[t=`aggreg;$[0=type x;t upsert `sym xkey `time
 
 /initialise aggreg keyed on sym so that upsert will always maintain the latest statistics
 /error trapped so that it will not error out if rdb does not subscribes to aggreg table
-
 
