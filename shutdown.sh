@@ -36,7 +36,7 @@ printLines()
 printLines
 info "Sourcing for running q"
 printLines
-runningQ=$(ps -ef | grep "5010"| grep -v grep)  
+runningQ=$(ps -ef | grep "\.q"| grep -v grep)  
 if [[ -z "$runningQ" ]]
 then 
 	info "No running q process found" 
@@ -44,7 +44,7 @@ then
 	exit 0 
 else
 	info "Found running q processes"
-	for PID in $(ps -ef | grep 5010 | grep -v grep | awk '{print $2}')
+	for PID in $(ps -ef | grep "\.q" | grep -v grep | awk '{print $2}')
 	do
 		info "Shutting down [$PID]"
 		ps -ef | grep -w $PID | head -1	

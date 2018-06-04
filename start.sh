@@ -47,7 +47,7 @@ printLines
 info "Starting q processes"
 printLines
 info "Check for existing tickerPlant"
-if [[ -z $(ps -ef | grep 5010 | grep tick.q) ]]
+if [[ -z $(ps -ef | grep "\.q" | grep tick.q|grep -v grep) ]]
 then
 	info "No Existing tickerPlant found"
 	info "Starting tickerPlant"
@@ -58,7 +58,7 @@ fi
 printLines
 info "Check for existing rdb"
 printLines
-if [[ -z $(ps -ef | grep 5010 | grep rdb.q) ]]
+if [[ -z $(ps -ef | grep "\.q" | grep rdb.q|grep -v grep) ]]
 then
 	info "No Existing RDB found"
 	info "Starting RDB"
@@ -69,7 +69,7 @@ fi
 printLines
 info "Check for existing feedHandler"
 printLines
-if [[ -z $(ps -ef | grep 5010 | grep feed.q) ]]
+if [[ -z $(ps -ef | grep "\.q" | grep feed.q|grep -v grep) ]]
 then
 	info "No Existing FeedHandler found"
 	info "Starting FeedHandler"
