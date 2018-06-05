@@ -61,6 +61,7 @@ printChoices()
         return 0
 }
 ###########################################################
+clear
 printHeader
 printf "Main Script for TickerPlant\n"
 printHeader

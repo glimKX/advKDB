@@ -9,10 +9,10 @@
 /when connection is opened, collect from handle the following information
 /datetime username hostname ipaddress connection duration
 /collect data from .z.po
-.z.po:{`.log.connections insert .z.Z,.z.u,(.Q.host .z.a;"." sv string "h"$0x0 vs .z.a),`opened,.z.w,0Nv;.log.out .log.co .z.w};
+.z.po:{[w] `.log.connections insert .z.Z,.z.u,(.Q.host .z.a;"." sv string "h"$0x0 vs .z.a),`opened,w,0Nv;.log.out .log.co w};
 
 /when connection is closed, update connection to closed
-.z.pc:{update connection:`closed,duration:"v"$80000*.z.Z-dateTime from `.log.connections where handle = .z.w;.log.out .log.cc .z.w};
+.z.pc:{[w] update connection:`closed,duration:"v"$80000*.z.Z-dateTime from `.log.connections where handle = w;.log.out .log.cc w};
 
 /need unique name for each log file
 .log.AllProcessName:(5010;5011;5013;5020)!`tickerPlant`RDB1`RDB2`FeedHandler;
@@ -28,5 +28,11 @@
  
 \c 200 200
 
-.log.cc:{[w] "Connection closed \n",.Q.s select from .log.connections where handle = w};
-.log.co:{[w] "Connection opened \n",.Q.s select from .log.connections where handle = w}; 
+.log.cc:{[w] "Connection closed: ",.Q.s1 exec from .log.connections where handle = w};
+.log.co:{[w] "Connection opened: ",.Q.s1 exec from .log.connections where handle = w}; 
+
+.log.value:{@[{.log.out "User: ",string[.z.u]," ## Memory Usage: ",.Q.s1 .Q.w[];value x};x;{.log.err -1_.Q.s x;x}]};
+
+/adding logging message in evaluating ipc
+.z.pg:{$[10h=type x;.log.value x;`upd=first x;value x;.log.value x]};
+.z.ps:{$[10h=type x;.log.value x;`upd=first x;value x;.log.value x]};

@@ -55,9 +55,7 @@ if[not system"t";system"t 1000";
 /declare log output for tickeprlant
 .log.outTC:{if[60000<.z.T-.log.time;
 	.log.out "Messages processed: ",string .u.i;
-	.log.out "Subscriber details for `aggreg: ",-1_ .Q.s .u.w `aggreg;
-	.log.out "Subscriber details for `quote:  ",-1_ .Q.s .u.w `quote;
-	.log.out "Subscriber details for `trade:  ",-1_ .Q.s .u.w `trade;
+	.log.out "Subscriber details: ",.Q.s1 .u.w;
 	.log.time::.z.T]
  };
 /made changes to .z.ts to call .log.out

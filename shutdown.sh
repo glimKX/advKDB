@@ -62,7 +62,7 @@ shutdownAll()
 			for PID in $(ps -ef | grep "\.q" | grep -v grep | awk '{print $2}')
 			do
 				info "Shutting down [$PID]"
-				ps -ef | grep -w $PID | head -1	
+				ps -ef | grep -w $PID | grep -v grep	
 				kill $PID	
 			done
 		fi
@@ -88,7 +88,7 @@ shutdownTick()
 	        for PID in $(ps -ef | grep "\.q" | grep tick.q|grep -v grep | awk '{print $2}')
 			do
 				info "Shutting down [$PID]"
-				ps -ef | grep -w $PID | head -1
+				ps -ef | grep -w $PID | grep -v grep
 				kill $PID
 			done
         fi
@@ -104,17 +104,17 @@ shutdownRDB()
         info "Shutting down RDB Only"
         printLines
         info "Check for running RDB"
-        if [[ -z $(ps -ef | grep "\.q" | grep rdb.q|grep -v grep) ]]
+        if [[ -z $(ps -ef | grep "\.q" | grep r.q|grep -v grep) ]]
         then
 			info "No running q process found"
 	        info "Shutdown not required"
         	exit 0
         else
 			info "Found running q processes"
-	        for PID in $(ps -ef | grep "\.q" | grep rdb.q|grep -v grep | awk '{print $2}')
+	        for PID in $(ps -ef | grep "\.q" | grep r.q|grep -v grep | awk '{print $2}')
 			do
 				info "Shutting down [$PID]"
-				ps -ef | grep -w $PID | head -1
+				ps -ef | grep -w $PID | grep -v grep
 				kill $PID
 			done
         fi
@@ -140,7 +140,7 @@ shutdownFeed()
 	        for PID in $(ps -ef | grep "\.q" | grep feed.q|grep -v grep | awk '{print $2}')
 			do
 				info "Shutting down [$PID]"
-				ps -ef | grep -w $PID | head -1
+				ps -ef | grep -w $PID | grep -v grep 
 				kill $PID
 			done
         fi
@@ -166,7 +166,7 @@ shutdownCEP()
                 for PID in $(ps -ef | grep "\.q" | grep cep.q|grep -v grep | awk '{print $2}')
                         do
                                 info "Shutting down [$PID]" 
-                                ps -ef | grep -w $PID | head -1 
+                                ps -ef | grep -w $PID | grep -v grep 
                                 kill $PID
                         done
         fi
