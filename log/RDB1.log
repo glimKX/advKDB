@@ -1,5 +1,0 @@
-INFO: RDB1 ## 2018.06.05D04:48:06.221931000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv 
-INFO: RDB1 ## 2018.06.05D04:50:09.993931000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.05T04:50:09.992;`glim;`localhost;"127.0.0.1";`opened;7i;0Nv 
-INFO: RDB1 ## 2018.06.05D04:50:12.741561000 ## User: glim## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!2717136 67108864 67108864 0 0 1047019520 1462 5356 
-INFO: RDB1 ## 2018.06.05D04:55:05.832401000 ## User: glim## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!3286832 67108864 67108864 0 0 1047019520 1462 5356 
-INFO: RDB1 ## 2018.06.05D04:56:02.208754000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.05T04:50:09.992;`glim;`localhost;"127.0.0.1";`closed;7i;00:05:26 
