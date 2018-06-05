@@ -1,0 +1,813 @@
+INFO: tickerPlant ## 2018.06.04D06:36:58.739194000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D06:37:01.817906000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:37:01.817 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D06:37:03.886738000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:37:03.886 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D06:37:04.988258000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:37:04.988 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D06:37:58.739098000 ## Messages processed: 108 
+INFO: tickerPlant ## 2018.06.04D06:37:58.739224000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D06:37:58.739281000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D06:37:58.739334000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D06:42:06.498905000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D06:42:09.611455000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:42:09.610 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D06:42:11.681259000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:42:11.680 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D06:42:12.778370000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:42:12.778 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D06:51:46.791920000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D06:51:49.898855000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:51:49.898 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D06:51:51.963809000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:51:51.963 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D06:51:53.056997000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T06:51:53.056 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D22:23:15.808735000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D22:23:18.894156000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:23:18.893 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D22:23:20.957951000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:23:20.957 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D22:23:37.131689000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D22:23:40.244244000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:23:40.243 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D22:23:42.274348000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:23:42.274 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D22:23:43.377065000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:23:43.376 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D22:27:57.208672000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D22:28:00.303835000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:28:00.303 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D22:28:02.366439000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:28:02.366 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D22:28:03.460329000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:28:03.460 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D22:28:57.210368000 ## Messages processed: 418 
+INFO: tickerPlant ## 2018.06.04D22:28:57.210876000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:28:57.211122000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:28:57.211524000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:31:20.763962000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D22:31:23.864231000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:31:23.863 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D22:31:25.934115000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:31:25.933 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D22:31:27.028088000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:31:27.027 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D22:34:44.182432000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D22:34:47.282457000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:34:47.281 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D22:34:49.346215000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:34:49.345 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D22:34:50.443363000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:34:50.443 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D22:47:01.108579000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.04D22:48:01.110296000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:48:01.110562000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.04D22:48:01.110654000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.04D22:48:01.110730000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.04D22:49:02.109716000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:49:02.109890000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.04D22:49:02.109917000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.04D22:49:02.109938000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.04D22:49:13.810621000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:49:13.809 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.04D22:49:15.865967000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T22:49:15.865 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.04D22:50:03.110173000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:50:03.110604000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:50:03.110895000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:50:03.111115000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:51:04.110092000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:51:04.110514000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:51:04.110796000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:51:04.111011000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:52:05.110055000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:52:05.110491000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:52:05.110784000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:52:05.111006000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:53:06.112292000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:53:06.112419000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:53:06.112477000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:53:06.112555000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:54:07.110390000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:54:07.110851000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:54:07.111227000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:54:07.111450000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:55:08.110240000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:55:08.110481000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:55:08.110548000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:55:08.110602000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:56:09.110028000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:56:09.110439000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:56:09.110679000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:56:09.111036000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:57:10.111035000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:57:10.111308000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:57:10.111380000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:57:10.111436000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:58:11.110123000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:58:11.110545000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:58:11.110844000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:58:11.111072000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:59:12.109980000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D22:59:12.110456000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D22:59:12.110768000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D22:59:12.110994000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:00:12.113004000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:00:12.115917000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:00:12.116275000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:00:12.116510000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:01:13.110452000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:01:13.110865000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:01:13.111248000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:01:13.111483000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:02:14.110222000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:02:14.110346000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:02:14.110406000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:02:14.110502000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:03:15.114724000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:03:15.115081000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:03:15.115312000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:03:15.115527000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:04:16.109919000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:04:16.110043000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:04:16.110101000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:04:16.110155000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:05:16.114508000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:05:16.114644000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:05:16.114715000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:05:16.114830000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:06:17.110019000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:06:17.110521000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:06:17.110818000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:06:17.111039000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:07:18.112366000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:07:18.112506000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:07:18.112577000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:07:18.112670000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:08:19.110500000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:08:19.110920000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:08:19.111291000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:08:19.111518000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:09:19.113201000 ## Messages processed: 596 
+INFO: tickerPlant ## 2018.06.04D23:09:19.113328000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:09:19.113390000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:09:19.113447000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:09:59.039064000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.04T23:09:59.038 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.04D23:10:20.112993000 ## Messages processed: 640 
+INFO: tickerPlant ## 2018.06.04D23:10:20.113336000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:10:20.113617000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:10:20.113834000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:11:21.110096000 ## Messages processed: 762 
+INFO: tickerPlant ## 2018.06.04D23:11:21.110571000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:11:21.110963000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:11:21.111208000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:12:22.109362000 ## Messages processed: 884 
+INFO: tickerPlant ## 2018.06.04D23:12:22.109711000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:12:22.109994000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:12:22.110216000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:13:23.109193000 ## Messages processed: 1006 
+INFO: tickerPlant ## 2018.06.04D23:13:23.109595000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:13:23.109908000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:13:23.110130000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:14:24.108848000 ## Messages processed: 1128 
+INFO: tickerPlant ## 2018.06.04D23:14:24.108970000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:14:24.109031000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:14:24.109132000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:15:25.109019000 ## Messages processed: 1250 
+INFO: tickerPlant ## 2018.06.04D23:15:25.109448000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:15:25.110145000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:15:25.110369000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:16:26.109296000 ## Messages processed: 1372 
+INFO: tickerPlant ## 2018.06.04D23:16:26.109417000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:16:26.109513000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:16:26.109572000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:17:27.109360000 ## Messages processed: 1494 
+INFO: tickerPlant ## 2018.06.04D23:17:27.109849000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:17:27.110878000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:17:27.111307000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:18:28.109400000 ## Messages processed: 1616 
+INFO: tickerPlant ## 2018.06.04D23:18:28.109755000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:18:28.110045000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:18:28.110264000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:19:29.109008000 ## Messages processed: 1738 
+INFO: tickerPlant ## 2018.06.04D23:19:29.109126000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:19:29.109184000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:19:29.109237000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:20:30.109326000 ## Messages processed: 1860 
+INFO: tickerPlant ## 2018.06.04D23:20:30.109675000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:20:30.110076000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:20:30.110665000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:21:31.108797000 ## Messages processed: 1982 
+INFO: tickerPlant ## 2018.06.04D23:21:31.109013000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:21:31.109071000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:21:31.109158000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:22:32.108925000 ## Messages processed: 2104 
+INFO: tickerPlant ## 2018.06.04D23:22:32.109341000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:22:32.109764000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:22:32.110119000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:23:33.109621000 ## Messages processed: 2226 
+INFO: tickerPlant ## 2018.06.04D23:23:33.109966000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:23:33.110367000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:23:33.110646000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:24:33.111256000 ## Messages processed: 2346 
+INFO: tickerPlant ## 2018.06.04D23:24:33.111410000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:24:33.111498000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:24:33.111557000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:25:34.109318000 ## Messages processed: 2468 
+INFO: tickerPlant ## 2018.06.04D23:25:34.109738000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:25:34.110012000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:25:34.110222000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:26:35.109075000 ## Messages processed: 2590 
+INFO: tickerPlant ## 2018.06.04D23:26:35.109476000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:26:35.109701000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:26:35.109962000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:27:35.111979000 ## Messages processed: 2710 
+INFO: tickerPlant ## 2018.06.04D23:27:35.112501000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:27:35.112945000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:27:35.113232000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:28:36.109169000 ## Messages processed: 2832 
+INFO: tickerPlant ## 2018.06.04D23:28:36.109761000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:28:36.109997000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:28:36.110253000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:29:37.112195000 ## Messages processed: 2954 
+INFO: tickerPlant ## 2018.06.04D23:29:37.112544000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:29:37.112863000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:29:37.113084000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:30:38.109105000 ## Messages processed: 3076 
+INFO: tickerPlant ## 2018.06.04D23:30:38.109457000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:30:38.109741000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:30:38.109957000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:31:39.109449000 ## Messages processed: 3198 
+INFO: tickerPlant ## 2018.06.04D23:31:39.109853000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:31:39.110150000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:31:39.110376000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:32:40.108870000 ## Messages processed: 3320 
+INFO: tickerPlant ## 2018.06.04D23:32:40.109285000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:32:40.109563000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:32:40.109778000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:33:40.110450000 ## Messages processed: 3440 
+INFO: tickerPlant ## 2018.06.04D23:33:40.110581000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:33:40.110652000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:33:40.110705000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:34:41.112442000 ## Messages processed: 3562 
+INFO: tickerPlant ## 2018.06.04D23:34:41.112851000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.04D23:34:41.113089000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:34:41.113357000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.04D23:35:25.701193000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.05D01:51:25.164953000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.05D01:52:25.166464000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:52:25.166717000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:52:25.166818000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:52:25.166898000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D01:53:26.166390000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:53:26.166696000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:53:26.166800000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:53:26.166879000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D01:54:27.166396000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:54:27.166615000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:54:27.166691000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:54:27.166756000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D01:55:28.166252000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:55:28.166535000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:55:28.166639000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:55:28.166756000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D01:56:28.167520000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:56:28.167598000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:56:28.167624000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:56:28.167647000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D01:57:29.166632000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:57:29.167208000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:57:29.167378000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:57:29.167457000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D01:58:30.166491000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:58:30.166917000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:58:30.167066000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:58:30.167147000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D01:59:31.165769000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D01:59:31.165886000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D01:59:31.165914000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D01:59:31.165939000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D02:00:31.166515000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D02:00:31.166793000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D02:00:31.166890000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D02:00:31.166973000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D02:01:32.165275000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D02:01:32.165351000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D02:01:32.165376000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D02:01:32.165398000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D02:02:33.166346000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D02:02:33.166624000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D02:02:33.166724000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D02:02:33.166807000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D02:03:34.166247000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D02:03:34.166557000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D02:03:34.166659000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D02:03:34.166746000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D02:04:35.166057000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D02:04:35.166184000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D02:04:35.166238000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D02:04:35.166329000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D02:05:36.166547000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.05D02:05:36.166773000 ## Subscriber details for `aggreg:  
+INFO: tickerPlant ## 2018.06.05D02:05:36.166861000 ## Subscriber details for `quote:   
+INFO: tickerPlant ## 2018.06.05D02:05:36.166929000 ## Subscriber details for `trade:   
+INFO: tickerPlant ## 2018.06.05D02:05:46.103837000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.05T02:05:46.103 glim localhost "127.0.0.1" opened     7              
+ 
+INFO: tickerPlant ## 2018.06.05D02:05:48.131915000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.05T02:05:48.131 glim localhost "127.0.0.1" opened     8              
+ 
+INFO: tickerPlant ## 2018.06.05D02:05:49.185403000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.05T02:05:49.185 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.05D02:05:59.321811000 ## Connection closed 
+dateTime user host ipAddress connection handle duration
+-------------------------------------------------------
+ 
+INFO: tickerPlant ## 2018.06.05D02:06:37.166616000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:06:37.166897000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:06:37.166957000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:06:37.167012000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:07:38.166544000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:07:38.166969000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:07:38.167343000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:07:38.167568000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:08:39.166391000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:08:39.166847000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:08:39.167232000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:08:39.167616000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:09:40.166312000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:09:40.166779000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:09:40.167150000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:09:40.167374000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:10:41.165567000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:10:41.165687000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:10:41.165745000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:10:41.165799000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:11:41.166239000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:11:41.166692000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:11:41.167060000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:11:41.167285000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:12:42.165843000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:12:42.165962000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:12:42.166018000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:12:42.166070000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:13:42.167657000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:13:42.168021000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:13:42.168287000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:13:42.168471000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:14:43.166586000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:14:43.167011000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:14:43.167415000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:14:43.167702000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:15:44.166515000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:15:44.166933000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:15:44.167331000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:15:44.167607000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:16:45.166427000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:16:45.166863000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:16:45.167256000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:16:45.167596000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:17:46.166311000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:17:46.166734000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:17:46.167111000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:17:46.167346000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:18:47.166259000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:18:47.166966000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:18:47.167222000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:18:47.167503000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:19:48.170060000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:19:48.170188000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:19:48.170247000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:19:48.170341000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:20:49.165908000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:20:49.166032000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:20:49.166089000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:20:49.166143000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:21:50.166280000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:21:50.166414000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:21:50.166489000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:21:50.166563000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:22:51.166456000 ## Messages processed: 22 
+INFO: tickerPlant ## 2018.06.05D02:22:51.166896000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:22:51.167291000 ## Subscriber details for `quote:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:22:51.167531000 ## Subscriber details for `trade:  7i ` 
+INFO: tickerPlant ## 2018.06.05D02:23:37.762371000 ## Connection opened 
+dateTime                user host      ipAddress   connection handle duration
+-----------------------------------------------------------------------------
+2018.06.05T02:05:49.185 glim localhost "127.0.0.1" opened     9              
+2018.06.05T02:23:37.761 glim localhost "127.0.0.1" opened     9              
+ 
+INFO: tickerPlant ## 2018.06.05D02:23:52.166400000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:23:52.166810000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:23:52.167273000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:23:52.167647000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:24:53.166313000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:24:53.166742000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:24:53.167247000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:24:53.167627000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:25:54.166297000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:25:54.166727000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:25:54.167210000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:25:54.167592000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:26:55.167183000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:26:55.167604000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:26:55.168032000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:26:55.168396000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:27:56.165956000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:27:56.166078000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:27:56.166161000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:27:56.166263000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:28:57.166693000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:28:57.167057000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:28:57.167533000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:28:57.167916000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:29:58.166649000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:29:58.167009000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:29:58.168228000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:29:58.168759000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:30:59.165803000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:30:59.165930000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:30:59.166043000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:30:59.166125000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:32:00.166029000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:32:00.166143000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:32:00.166221000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:32:00.166295000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:33:01.166210000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:33:01.166457000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:33:01.166552000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:33:01.166632000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:34:02.166434000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:34:02.166585000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:34:02.166699000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:34:02.166847000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:35:03.166492000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:35:03.166618000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:35:03.166726000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:35:03.166808000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:36:04.166563000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:36:04.167002000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:36:04.167484000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:36:04.167875000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:37:05.166485000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:37:05.166993000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:37:05.167598000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:37:05.168001000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:38:06.166697000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:38:06.167188000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:38:06.167734000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:38:06.168172000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:39:07.166385000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:39:07.167190000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:39:07.167618000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:39:07.168079000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:40:08.166094000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:40:08.166220000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:40:08.166305000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:40:08.166407000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:41:09.166094000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:41:09.166219000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:41:09.166347000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:41:09.166428000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:42:10.165818000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:42:10.165937000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:42:10.166020000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:42:10.166098000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:43:11.166326000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:43:11.166444000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:43:11.166528000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:43:11.166635000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:44:12.165691000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:44:12.165807000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:44:12.165886000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:44:12.165960000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:45:12.167665000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:45:12.167800000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:45:12.167907000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:45:12.168056000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:46:13.166341000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:46:13.166791000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:46:13.167275000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:46:13.167662000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:47:14.166109000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:47:14.166231000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:47:14.166315000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:47:14.166430000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:48:15.165924000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:48:15.166038000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:48:15.166116000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:48:15.166188000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:49:15.169056000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:49:15.169185000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:49:15.169293000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:49:15.169374000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:50:16.166132000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:50:16.166627000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:50:16.167028000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:50:16.167480000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:51:17.167271000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:51:17.167671000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:51:17.168010000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:51:17.168388000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:52:18.166451000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:52:18.166883000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:52:18.167365000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:52:18.167746000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:53:19.165625000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:53:19.165747000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:53:19.165830000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:53:19.165908000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:54:19.166329000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:54:19.166797000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:54:19.167497000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:54:19.167829000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:55:20.166032000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:55:20.166174000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:55:20.166257000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:55:20.166332000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:56:21.166173000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:56:21.166609000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:56:21.167107000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:56:21.167636000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:57:22.166603000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:57:22.167030000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:57:22.167495000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:57:22.167972000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:58:23.166540000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:58:23.166969000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:58:23.167437000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:58:23.167815000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:59:24.165485000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D02:59:24.165620000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D02:59:24.165707000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D02:59:24.165785000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:00:25.166412000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:00:25.166892000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:00:25.167371000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:00:25.167817000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:01:26.166484000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:01:26.166894000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:01:26.167564000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:01:26.167886000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:02:27.166265000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:02:27.166688000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:02:27.167160000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:02:27.167720000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:03:28.166187000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:03:28.166613000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:03:28.167073000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:03:28.167453000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:04:29.166332000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:04:29.166457000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:04:29.166543000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:04:29.166624000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:05:30.166558000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:05:30.167031000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:05:30.167525000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:05:30.167915000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:06:31.172225000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:06:31.172524000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:06:31.172832000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:06:31.173485000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:07:32.165429000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:07:32.165860000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:07:32.166255000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:07:32.166638000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:08:32.167361000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:08:32.167708000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:08:32.168019000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:08:32.168278000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:09:33.167305000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:09:33.167723000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:09:33.168118000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:09:33.168487000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:10:34.166217000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:10:34.166705000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:10:34.167201000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:10:34.167583000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:11:35.166692000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:11:35.167123000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:11:35.167600000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:11:35.167978000 ## Subscriber details for `trade:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:12:36.167526000 ## Messages processed: 44 
+INFO: tickerPlant ## 2018.06.05D03:12:36.167939000 ## Subscriber details for `aggreg: 8i ` 
+INFO: tickerPlant ## 2018.06.05D03:12:36.168366000 ## Subscriber details for `quote:  7i `
+9i ` 
+INFO: tickerPlant ## 2018.06.05D03:12:36.168727000 ## Subscriber details for `trade:  7i `
+9i ` 

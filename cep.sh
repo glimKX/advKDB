@@ -1,7 +1,7 @@
 #!/bin/bash
 ##########################################################
-# Script to run TickerPlant processes from the template
-# TickerPlant starts with 5010 port
+# Script to run cep processes from the template
+# CEP (default)  will only subscribe to trade and quote and run aggregration function 
 ###########################################################
 
 ###########################################################
@@ -34,13 +34,12 @@ printLines()
 	return 0
 }
 ###########################################################
-info "Initialising FeedHandler with predefined timer" 
-nohup $q feed.q :5010 -p 5020 -t 1000 > /dev/null 2>&1 &
+info "Initialising CEP and subscribing to trade and quote"
+($q tick/cep.q :5010 -func aggregration -p 5025 > /dev/null 2>&1 &)
 sleep 2
-if [[ ! -z $(ps -ef | grep 5010 | grep feed.q) ]]
-then
-	info "FeedHandler started on port 5020"
+if [[ ! -z $(ps -ef|grep r.q|grep -v grep) ]]
+then 
+	info "CEP started on port 5025"
 else
-	err "FeedHandler failed to start"	
-	exit 1
+	err "CEP failed to start"
 fi

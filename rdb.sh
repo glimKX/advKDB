@@ -35,13 +35,6 @@ printLines()
 	return 0
 }
 ###########################################################
-printLines
-info "Sourcing for q"
-printLines
-q=$(find ~ -name q | grep l32)
-if [[ ! -z "$q" ]]
-then 
-	info "Found q app $q" 
 #	if [ $# -eq 0 ]
 #	then 
 #		err "Missing Argument, choose which RDB to start"
@@ -71,7 +64,3 @@ then
                 err "RDB2 failed to start"
                 fi
 #	fi
-else
-	err "q is missing"
-	exit 1
-fi
