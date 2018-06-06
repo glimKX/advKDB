@@ -12,7 +12,7 @@ if[not "w"=first string .z.o;system "sleep 1"];
 .u.x:.z.x,(count .z.x)_enlist ":5010";
 
 if[not count .Q.opt[.u.x]`func;
-	0N! "CEP cannot initalise due to missing func";
+	-2"ERROR: CEP cannot initalise due to missing func";
 	exit 1
  ];
 
