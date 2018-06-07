@@ -1,7 +1,7 @@
 #!/bin/bash
 ##########################################################
-# Script to run TickerPlant processes from the template
-# TickerPlant starts with 5010 port
+# Script to run cep processes from the template
+# CEP (default)  will only subscribe to trade and quote and run aggregration function 
 ###########################################################
 
 ###########################################################
@@ -34,12 +34,13 @@ printLines()
 	return 0
 }
 ###########################################################
-info "Initialising TickerPlant with predefined schemas"
-nohup $q tick.q sym tplog -p 5010 -t 1000 > /dev/null 2>&1 &
+cd $SCRIPTS_DIR 
+info "Initialising CEP and subscribing to trade and quote"
+($q tick/cep.q :$TICK_PORT -func aggregration -p $CEP_PORT > /dev/null 2>&1 &)
 sleep 2
-if [[ ! -z $(ps -ef | grep 5010 | grep tick.q) ]]
-then
-	info "TickerPlant started on port 5010"
+if [[ ! -z $(ps -ef|grep $CEP_PORT |grep -v grep|grep -v bash) ]]
+then 
+	info "CEP started on port $CEP_PORT"
 else
-	err "TIckerPlant failed to start"	
+	err "CEP failed to start"
 fi

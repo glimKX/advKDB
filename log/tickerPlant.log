@@ -186,3 +186,44 @@ INFO: tickerPlant ## 2018.06.06D00:20:46.520816000 ## Connection closed: `dateTi
 INFO: tickerPlant ## 2018.06.06D00:21:19.429253000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.06T00:21:19.429;`glim;`localhost;"127.0.0.1";`opened;7i;0Nv) 
 INFO: tickerPlant ## 2018.06.06D00:21:19.431130000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!440320 67108864 67108864 0 0 1047019520 749 28202 
 INFO: tickerPlant ## 2018.06.06D00:21:19.432174000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.06T00:21:19.429;`glim;`localhost;"127.0.0.1";`closed;7i;00:00:00) 
+INFO: tickerPlant ## 2018.06.07D02:34:01.440444000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!329888 67108864 67108864 0 0 1047019520 749 28202 
+INFO: tickerPlant ## 2018.06.07D04:00:42.708939000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: tickerPlant ## 2018.06.07D04:19:12.288144000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: tickerPlant ## 2018.06.07D04:19:15.396936000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.07T04:19:15.396;`glim;`localhost;"127.0.0.1";`opened;7i;0Nv) 
+INFO: tickerPlant ## 2018.06.07D04:19:15.397401000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!329216 67108864 67108864 0 0 1047904256 736 27833 
+INFO: tickerPlant ## 2018.06.07D04:19:17.446935000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.07T04:19:17.446;`glim;`localhost;"127.0.0.1";`opened;8i;0Nv) 
+INFO: tickerPlant ## 2018.06.07D04:19:17.447832000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!329456 67108864 67108864 0 0 1047904256 738 27883 
+INFO: tickerPlant ## 2018.06.07D04:19:21.650860000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.07T04:19:21.650;`glim;`localhost;"127.0.0.1";`opened;9i;0Nv) 
+INFO: tickerPlant ## 2018.06.07D04:19:21.650981000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!329648 67108864 67108864 0 0 1047904256 738 27883 
+INFO: tickerPlant ## 2018.06.07D04:20:12.289691000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:20:12.290056000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:21:13.289627000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:21:13.290514000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:22:14.289108000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:22:14.289990000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:23:15.289492000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:23:15.290350000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:24:16.288832000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:24:16.289087000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:25:17.289870000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:25:17.290748000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:26:18.289489000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:26:18.289705000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:27:19.289704000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:27:19.290770000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:28:20.289635000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:28:20.290542000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:29:21.290077000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:29:21.291046000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:30:22.289488000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:30:22.290355000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:31:23.289639000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:31:23.289849000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:32:24.289105000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:32:24.289310000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:33:25.289790000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:33:25.290675000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:34:26.289697000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:34:26.290648000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 
+INFO: tickerPlant ## 2018.06.07D04:35:27.289477000 ## Messages processed: 0 
+INFO: tickerPlant ## 2018.06.07D04:35:27.289700000 ## Subscriber details: `aggreg`quote`trade!(,(8i;`);((7i;`);(9i;`));((7i;`);(9i;`))) 

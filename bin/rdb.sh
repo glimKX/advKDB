@@ -42,12 +42,13 @@ printLines()
 #	fi
 #	if [[ $1 == "RDB1" ]]
 #	then
+cd $SCRIPTS_DIR
 		info "Initialising RDB1 and subscribing to trade and quote"
-		($q tick/r.q :5010 -table "trade;quote" -p 5011 > /dev/null 2>&1 &)
+		($q tick/r.q :$TICK_PORT -table "trade;quote" -p $RDB1_PORT > /dev/null 2>&1 &)
 		sleep 2
-		if [[ ! -z $(ps -ef|grep 5010|grep 5011|grep r.q) ]]
+		if [[ ! -z $(ps -ef|grep $RDB1_PORT|grep r.q|grep -v bash) ]]
 		then 
-		info "RDB1 started on port 5011"
+		info "RDB1 started on port $RDB1_PORT"
 		else
 		err "RDB1 failed to start"
 		fi
@@ -55,11 +56,11 @@ printLines()
 #	if [[ $1 == "RDB2" ]]
 #	then 
 		info "Initialising RDB2 and subscribing to aggregrate"
-		($q tick/r.q :5010 -table "aggreg" -p 5013 > /dev/null 2>&1 &)
+		($q tick/r.q :$TICK_PORT -table "aggreg" -p $RDB2_PORT > /dev/null 2>&1 &)
 		sleep 2  
-		if [[ ! -z $(ps -ef|grep 5010|grep 5013|grep r.q) ]]
+		if [[ ! -z $(ps -ef|grep $RDB2_PORT|grep r.q|grep -v bash) ]]
 		then
-		info "RDB2 started on port 5013"
+		info "RDB2 started on port $RDB2_PORT"
 		else
                 err "RDB2 failed to start"
                 fi

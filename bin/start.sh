@@ -64,8 +64,8 @@ startTickerPlant()
 	if [[ -z $(ps -ef | grep "\.q" | grep tick.q|grep -v grep) ]]
 	then
         	info "No Existing tickerPlant found"
-        	info "Starting tickerPlant"
-        	bash tick.sh
+        	info "Starting tickerPlant with port $TICK_PORT"
+        	bash tick.sh 
 	else
         	warn "Existing Tickerplant found, not starting tickerPlant"
 	fi 
@@ -86,7 +86,7 @@ startRDB()
 	then
         	info "No Existing RDB found"
         	info "Starting RDB"
-        	bash rdb.sh
+        	bash rdb.sh 
 	else
        		warn "Existing RDB found, not starting RDBs"
 	fi
@@ -106,7 +106,7 @@ startFeed()
 	then
         	info "No Existing FeedHandler found"
         	info "Starting FeedHandler"
-        	bash feed.sh
+        	bash feed.sh 
 	else
         	warn "Existing FeedHandler found, not starting FeedHandler"
 	fi
@@ -151,11 +151,38 @@ sourceQ()
 	fi
 }
 ###########################################################
+# Function: sourceConfig 
+# Description: source for Config 
+###########################################################
+sourceConfig()
+{
+        printLines
+        info "Sourcing for Config"
+        printLines
+	if [ ! -f ../config/port.config ]
+	then 
+		err "config file is missing"
+		exit 1
+	else
+		source ../config/port.config
+		info "Sourced for config"	
+	fi
+	if [ ! -f ../config/env.config ]
+	then
+		err "Env file is missing"
+		exit 1
+	else
+		source ../config/env.config
+		info "Sourced for Environments"
+	fi
+}
+###########################################################
 printHeader
 if [ "$1" = "ALL" ] || [ $# -eq 0 ]
 then
 	info "Starting ALL q processes for TickerPlant"
 	sourceQ
+	sourceConfig
 	startTickerPlant
 	startRDB
 	startFeed
@@ -165,24 +192,28 @@ elif [ "$1" = "tickerplant" ]
 then
 	info "Starting TickerPlant Only"
 	sourceQ
+	sourceConfig
 	startTickerPlant
 	info "Finish Starting TickerPlant"
 elif [ "$1" = "rdb" ]
 then
 	info "Starting RDB Only"
 	sourceQ
+	sourceConfig
 	startRDB
 	info "Finish Starting RDB"
 elif [ "$1" = "feed" ]
 then
 	info "Starting FeedHandler Only"
 	sourceQ
+	sourceConfig
 	startFeed
 	info "Finish Starting FeedHandler"
 elif [ "$1" = "cep" ]
 then
         info "Starting CEP Only"
         sourceQ
+	sourceConfig
         startCEP
         info "Finish Starting CEP"
 fi

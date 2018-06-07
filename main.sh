@@ -91,6 +91,7 @@ printLines
 if [ "$choice" = "Start" ] || [ "$choice" = "1" ]
 then
 	echo "Start Mode"
+	cd bin
 	printLines
 	printChoices
 	read -p 'Please input start mode choice: ' mode
@@ -118,6 +119,7 @@ then
 elif [ "$choice" = "Shutdown" ] || [ "$choice" = "2" ]
 then
 	echo "Shutdown Mode"
+	cd bin
 	printLines
 	printChoices
 	read -p 'Please input start mode choice: ' mode
