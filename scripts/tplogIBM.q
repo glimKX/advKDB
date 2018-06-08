@@ -9,6 +9,7 @@
 \d .tpr
 dir: @[.Q.opt;.z.x;""];
 dir: $[count dir;first dir `tplogFile;"sym",string .z.D];
+/to change to use env config for tplog dir, use key to check if it exists
 dir: raze @[system;"find . -name \"",dir,"\"*";{-2"Cannot find tplogFile: ",.Q.s x;exit 1}];
 dir: `$":",2_dir;
 filter:{x:`func`table`data!x;.debug.x:x;x:@[x;`data;:;x[`data][;where `IBM=x[`data] 1]];if[sum count each x`data;.tpr.write enlist value x;]};

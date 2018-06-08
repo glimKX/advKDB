@@ -29,7 +29,7 @@ if[()~key .csv.dir;
 .csv.ingestTradeCSV:{(`.u.upd;`trade;1_'("NSJF";",")0:x)};
 
 / load schema table to ensure consistency in data with tickerplant
-\l tick/sym.q
+system "l ",getenv`SCHEMA
 
 / script checks header to decide function to apply, if errors out, exit immediately 
 .csv.cols:@[{`$"," vs first read0 x};.csv.dir;{-2"ERROR: Unable to ingest data due to ",.Q.s x;exit 1}];

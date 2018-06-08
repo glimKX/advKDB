@@ -17,7 +17,7 @@
 /need unique name for each log file
 .log.AllProcessName:(5010;5011;5013;5020)!`tickerPlant`RDB1`RDB2`FeedHandler;
 .log.processName:.log.AllProcessName system"p";
-.log.file:hopen `$":log/",string[.log.processName],".log";
+.log.file:hopen `$":",getenv[`LOG_DIR],"/",string[.log.processName],".log";
 
 .log.string:{string[.log.processName]," ## ",string[.z.P]," ## ",x," \n"};
 /capture initalised time
@@ -36,3 +36,6 @@
 /adding logging message in evaluating ipc
 .z.pg:{$[10h=type x;.log.value x;`upd=first x;value x;.log.value x]};
 .z.ps:{$[10h=type x;.log.value x;`upd=first x;value x;.log.value x]};
+
+/shutdown function
+.log.shutdown:{.log.out "Shutdown Trigger from mainScript";exit 0};

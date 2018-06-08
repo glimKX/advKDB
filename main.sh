@@ -79,6 +79,32 @@ printChoices()
 		fi
 }
 ###########################################################
+# Function: sourceConfig
+# Description: source for Config
+###########################################################
+sourceConfig()
+{
+        printLines
+        info "Sourcing for Config"
+        printLines
+        if [ ! -f config/port.config ]
+        then
+                err "config file is missing"
+                exit 1
+        else
+                source config/port.config
+                info "Sourced for config"
+        fi
+        if [ ! -f config/env.config ]
+        then
+                err "Env file is missing"
+                exit 1
+        else
+                source config/env.config
+                info "Sourced for Environments"
+        fi
+}
+###########################################################
 
 clear
 printHeader
@@ -168,9 +194,10 @@ then
 		exit 1
 	else
 		sourceQ
+		sourceConfig
 		info "Pushing csv to tickerplant"
 		printf "\n"
-		$q csvLoad.q :$runStatus -csv $csvInput
+		$q $SCRIPTS_DIR/csvLoad.q :$runStatus -csv $csvInput
 	fi
 elif [ "$choice" = "reIngestTPLog" ] || [ "$choice" = "5" ]
 then
@@ -179,8 +206,9 @@ then
 	read -p 'Please input tpFile name (do not input path): ' tpInput
 	info "Creating new tplogFile for $tpInput"
 	sourceQ
+	sourceConfig
 	printf "\n"
-	$q tplogIBM.q -tplogFile $tpInput
+	$q $SCRIPTS_DIR/tplogIBM.q -tplogFile $tpInput
 else
 	err "Mode is not present exiting script"
 	printLines
