@@ -27,8 +27,8 @@ if[not "w"=first string .z.o;system "sleep 1"];
 /error trapped so that it will not error out if rdb does not subscribes to aggreg table
 
 upd:{[t;x] if[t in value .u.tSub;$[t=`aggreg;$[0=type x;t upsert `sym xkey `time`sym xcol flip (cols[t])!x;t upsert `sym xkey x];t insert x]]};
-.u.rep:{if[any 2<>count each x;x:enlist x];(.[;();:;].)each x;if[null first y;:()];if[`aggreg in value .u.tSub;`sym xkey `aggreg];-11!y;system "cd ",1_-10_string first reverse y};
-/ HARDCODE \cd if other than logdir/db
+.u.rep:{if[any 2<>count each x;x:enlist x];(.[;();:;].)each x;if[null first y;:()];if[`aggreg in value .u.tSub;`sym xkey `aggreg];-11!y;system "cd ",getenv `HDB};
+\cd in environmental variable, HDB location
 
 / connect to ticker plant for (schema;(logcount;log))
 / this changes such that the rdb is able to choose what it subscribes to
