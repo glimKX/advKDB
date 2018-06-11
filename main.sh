@@ -175,11 +175,11 @@ then
 	echo "Test Mode"
 	printLines
 	info "Checking for running processes"
-	echo "QPROCESS	PID	STIME	ARGUMENTS		PORT"
+	echo "QPROCESS	PID	STIME	ARGUMENTS				PORT"
 #glim     31516 13606  0 01:51 pts/3    00:00:00 /home/glim/q/l32/q tick.q sym tplog -p 5010 -t 1000
 #glim     31681 13606  0 02:05 pts/3    00:00:00 /home/glim/q/l32/q tick/r.q :5010 -table trade;quote  5011
 	ps -ef | grep "\.q" | grep -v grep | grep tick.q | awk '{printf ("%-8s\t%5s\t%4s\t%4s\t%-15s\t%4s\t\n",$9, $2, $5, "-tpDir", $11, $13)}'
-	ps -ef | grep "\.q" | grep -v grep | grep -v tick.q | awk -F"-p" -v OFS='\t' '{print $1,$2}' | awk {'printf ("%-8s\t%5s\t%4s\t%4s\t%-15s\t%4s\t\n",$9, $2, $5, $11, $12, $NF)'}
+	ps -ef | grep "\.q" | grep -v grep | grep -v tick.q | awk -F"-p" -v OFS='\t' '{print $1,$2}' | awk {'printf ("%-8s\t%5s\t%4s\t%4s\t%-15s\t\t\t%4s\t\n",$9, $2, $5, $11, $12, $NF)'}
 	exit 0
 elif [ "$choice" = "LoadCSV" ] || [ "$choice" = "4" ]
 then

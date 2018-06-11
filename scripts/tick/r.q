@@ -6,6 +6,7 @@
 /q tick/r.q [host]:port[:usr:pwd] [host]:port[:usr:pwd] -table "table1;table2;table3"
 /2008.09.09 .k ->.q
 
+
 if[not "w"=first string .z.o;system "sleep 1"];
 
 
@@ -17,7 +18,7 @@ if[not "w"=first string .z.o;system "sleep 1"];
 .u.end:{t:tables`.;t@:where `g=attr each t@\:`sym;.Q.hdpf[`$":",.u.x 1;`:.;x;`sym];@[;`sym;`g#] each t;};
 
 / load logging capability
-\l log.q
+system "l ",getenv[`SCRIPTS_DIR],"/log.q";
 
 / init schema and sync up from log file;cd to hdb(so client save can run)
 //update upd such that if data is aggreg, it will manipulate it

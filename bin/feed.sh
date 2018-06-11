@@ -36,7 +36,7 @@ printLines()
 ###########################################################
 cd $SCRIPTS_DIR
 info "Initialising FeedHandler with predefined timer" 
-nohup $q feed.q :$TICK_PORT -p $FEED_PORT -t 1000 > /dev/null 2>&1 &
+nohup $q feed.q :$TICK_PORT -t 1000 -p $FEED_PORT > /dev/null 2>&1 &
 sleep 2
 if [[ ! -z $(ps -ef | grep $FEED_PORT | grep -v grep|grep -v bash) ]]
 then
