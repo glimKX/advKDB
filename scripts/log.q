@@ -15,7 +15,7 @@
 .z.pc:{[w] update connection:`closed,duration:"v"$80000*.z.Z-dateTime from `.log.connections where handle = w;.log.out .log.cc w};
 
 /need unique name for each log file
-.log.AllProcessName:(5010;5011;5013;5020)!`tickerPlant`RDB1`RDB2`FeedHandler;
+.log.AllProcessName:(5010;5011;5013;5020;5012)!`tickerPlant`RDB1`RDB2`FeedHandler`HDB;
 .log.processName:.log.AllProcessName system"p";
 .log.file:hopen `$":",getenv[`LOG_DIR],"/",string[.log.processName],".log";
 

@@ -133,6 +133,26 @@ startCEP()
         return 0
 }
 ###########################################################
+# Function: startHDB
+# Description: starts HDB
+###########################################################
+startHDB()
+{
+        printLines
+        info "Starting HDB"
+        printLines
+        info "Check for existing HDB"
+        if [[ -z $(ps -ef | grep "\.q" | grep hdb.q|grep -v grep) ]]
+        then
+                info "No Existing HDB found"
+                info "Starting HDB"
+                bash hdb.sh  
+        else
+                warn "Existing HDB found, not starting HDB"
+        fi
+        return 0
+}
+###########################################################
 # Function: sourceQ 
 # Description: source for Q 
 ###########################################################
@@ -187,6 +207,7 @@ then
 	startRDB
 	startFeed
 	startCEP
+	startHDB
 	info "Finish Starting ALL"
 elif [ "$1" = "tickerplant" ]
 then
@@ -216,6 +237,13 @@ then
 	sourceConfig
         startCEP
         info "Finish Starting CEP"
+elif [ "$1" = "hdb" ] 
+then
+        info "Starting HDB Only"
+        sourceQ
+        sourceConfig
+        startHDB
+        info "Finish Starting HDB"
 fi
 printHeader
 exit 0 

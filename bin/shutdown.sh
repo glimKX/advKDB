@@ -173,6 +173,31 @@ shutdownCEP()
         return 0
 }
 ###########################################################
+# Function: shutdownHDB 
+# Description: shutdown HDB 
+###########################################################
+shutdownHDB()
+{
+        printLines
+        info "Shutting down HDB Only"
+        printLines
+        info "Check for running HDB"
+        if [[ -z $(ps -ef | grep "\.q" | grep hdb.q|grep -v grep) ]]
+        then
+                info "No running q process found"
+                info "Shutdown not required"
+                exit 0
+        else
+                info "Found running q processes"
+                for PID in $(ps -ef | grep "\.q" | grep hdb.q|grep -v grep | awk '{print $2}')
+                        do
+                                info "Shutting down [$PID]" 
+                                ps -ef | grep -w $PID | grep -v grep 
+                                kill $PID
+                        done
+        fi
+}
+###########################################################
 printHeader
 if [ "$1" = "ALL" ] || [ $# -eq 0 ]
 then
@@ -194,6 +219,10 @@ elif [ "$1" = "cep" ]
 then
         shutdownCEP
         info "Finish Shutdown CEP"
+elif [ "$1" = "hdb" ] 
+then
+        shutdownHDB
+        info "Finish Shutdown HDB"
 fi
 printHeader
 exit 0

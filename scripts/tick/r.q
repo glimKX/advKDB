@@ -15,7 +15,7 @@ if[not "w"=first string .z.o;system "sleep 1"];
 / tables to subscribe to
 .u.tSub:$["-table" in .u.x;raze "`",/:raze";" vs' .Q.opt[.u.x]`table;"`"];
 / end of day: save, clear, hdb reload
-.u.end:{t:tables`.;t@:where `g=attr each t@\:`sym;.Q.hdpf[`$":",.u.x 1;`:.;x;`sym];@[;`sym;`g#] each t;};
+.u.end:{t:tables`.;t@:where `g=attr each t@\:`sym;.Q.hdpf[`$"::",getenv`HDB_PORT;`:.;x;`sym];@[;`sym;`g#] each t;};
 
 / load logging capability
 system "l ",getenv[`SCRIPTS_DIR],"/log.q";
@@ -29,7 +29,7 @@ system "l ",getenv[`SCRIPTS_DIR],"/log.q";
 
 upd:{[t;x] if[t in value .u.tSub;$[t=`aggreg;$[0=type x;t upsert `sym xkey `time`sym xcol flip (cols[t])!x;t upsert `sym xkey x];t insert x]]};
 .u.rep:{if[any 2<>count each x;x:enlist x];(.[;();:;].)each x;if[null first y;:()];if[`aggreg in value .u.tSub;`sym xkey `aggreg];-11!y;system "cd ",getenv `HDB};
-\cd in environmental variable, HDB location
+/cd in environmental variable, HDB location
 
 / connect to ticker plant for (schema;(logcount;log))
 / this changes such that the rdb is able to choose what it subscribes to
