@@ -16,9 +16,9 @@ if[not "w"=first string .z.o;system "sleep 1"];
 .u.tSub:$["-table" in .u.x;raze "`",/:raze";" vs' .Q.opt[.u.x]`table;"`"];
 / end of day: save, clear, hdb reload
 .u.end:{t:tables`.;
-	t@:where `g=attr each t@\:`sym;
 	/added to fix aggreg saving down
 	t set' (0!value @) each t;
+	t@:where `g=attr each t@\:`sym;
 	.Q.hdpf[`$"::",getenv`HDB_PORT;`:.;x;`sym];@[;`sym;`g#] each t;};
 
 / load logging capability

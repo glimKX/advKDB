@@ -57,7 +57,7 @@ printLines()
 ###########################################################
 printChoices()
 {
-        printf "These are the followings choices for start mode\n	1.	ALL\n	2.	tickerplant\n	3.	rdb\n	4.	feed\n	5.	cep\n"
+        printf "These are the followings choices for start mode\n	1.	ALL\n	2.	tickerplant\n	3.	rdb\n	4.	feed\n	5.	cep\n	6.	hdb\n"
         return 0
 }
 ###########################################################
@@ -110,7 +110,7 @@ clear
 printHeader
 printf "Main Script for TickerPlant\n"
 printHeader
-printf "Script has 3 modes\n	1. Start:		To start processes\n	2. Shutdown:		To stop processes\n	3. Test:		To check on processes\n	4. LoadCSV:		To load csv into TickerPlant\n	5. reIngestTPLog:	To parse for IBM entries\n"
+printf "Script has 3 modes\n	1. Start:		To start processes\n	2. Shutdown:		To stop processes\n	3. Test:		To check on processes\n	4. LoadCSV:		To load csv into TickerPlant\n	5. reIngestTPLog:	To parse for IBM entries\n	6. changeConfig:	To change config ports\n"
 read -p 'Please input mode choice: ' choice
 printf "Choice is: %s \n" "$choice"
 printLines
@@ -136,6 +136,9 @@ then
 	;;
 	cep|5)
 	./start.sh cep
+	;;
+	hdb|6)
+	./start.sh hdb
 	;;
 	*)
 	err "No such choice exiting script"
@@ -165,6 +168,9 @@ then
 	'cep'|'5')
 	./shutdown.sh cep
 	;;
+	'hdb'|'6')
+        ./shutdown.sh hdb 
+        ;;
 	*)
 	err "No such choice exiting script"
 	exit 1
@@ -209,6 +215,17 @@ then
 	sourceConfig
 	printf "\n"
 	$q $SCRIPTS_DIR/tplogIBM.q -tplogFile $tpInput
+elif [ "$choice" = "changeConfig" ] || [ "$choice" = "6" ]
+then
+	echo "changeConfig Mode"
+	printLines
+	if [ -f config/port.config ]
+	then
+		info "Opening text editor to config/port.config"
+		vi config/port.config	
+	else
+		err "config/port.config is missing"
+	fi
 else
 	err "Mode is not present exiting script"
 	printLines
