@@ -4,54 +4,46 @@
 // w32: cl  ../c/c/c.c c.lib ws2_32.lib
 #include"k.h"
 #include <stdio.h>
-/*
-int handle();
 
-int handle(char[20] host, int port){
-  int c=khp(char,host);                         //connect
-  k(-c,"0N! 1+1",(K)0);//insert
-  k(c,"",(K)0); // flush                              
-  return c;}
-*/
-int handle(char *host,int port){
-        int c=khp(host,port);
-        k(-c,"a+:2",(K)0);
-        return 0;}
+int EXIT_FAILURE=1;
+int EXIT_SUCCESS=0;
 
-int main(void){
-	printf("Initialisation of C to KDB API");
-
-	char *host;
-	int port;
-	printf("Enter host");
-	host = gets();
-	printf("Enter port");
-	port = gets();
-
-	int h = handle(host,port);
+int handleOK(int handle){
+	//handleOK function taken from c_api_for_KDB.pdf
+	if(handle > 0)
+		return 1;
+	if(handle == 0)
+		fprintf(stderr, "Authentication error %d\n", handle);
+	else if(handle == -1)
+		fprintf(stderr, "Connection error %d\n", handle);
+	else if(handle == -2)
+		fprintf(stderr, "Time out error %d\n", handle);
 	return 0;
 }
 
-/*
-#define Q(e,s) {if(e)return printf("%s\n",s),-1;}      //error
+int handle(char *host,int port){
+        int c=khp(host,port);
+	//k(-c,"a+:2",(K)0);
+        return c;}
 
-int main(){K x,y;int c=khpu("localhost",5001,"usr:pwd");
- Q(c<0,"connect")Q(!c,"access")
- Q(!k(-c,"`trade insert(12:34:56.789;`xx;93.5;300)",(K)0),"err") // statement insert
- Q(!(x=k(c,"select sum size by sym from trade",0)),"err")    // statement select
- Q(!(x=ktd(x)),"type")                   // flip from keyedtable(dict)
-  y=x->k;                                // dict from flip
-  y=kK(y)[1],printf("%d cols:\n",y->n);  // data from dict
-  y=kK(y)[0],printf("%d rows:\n",y->n);  // column 0
-  printf("%s\n",kS(y)[0]);               // sym 0 
-  r0(x);                                 // release memory
- x=knk(4,kt(1000*(time(0)%86400)),ks("xx"),kf(93.5),ki(300)); // data record
-// DO(10000,Q(!k(-c,"insert",ks((S)"trade"),r1(x),(K)0),es)) // 10000 asynch inserts
-// k(c,"",(K)0); // synch chase
-// return 0;
- Q(!k(-c,"insert",ks("trade"),x,(K)0),"err")                           // parameter insert
- Q(!(x=k(c,"{[x]select from trade where size>x}",ki(100),(K)0)),"err") // parameter select
-  r0(x);
- close(c);
- return 0;}
-*/
+int main(void){
+	printf("Initialisation of C to KDB API\n");
+	char i[20];
+	char host[20];
+	int port;
+	printf("Enter host:");
+	gets(host);
+	printf("Enter port:");
+	gets(i) ;
+	port = atoi(i);
+
+	int h = handle(host,port);
+	if(!handleOK(h))
+		return EXIT_FAILURE;
+	printf("Handle %d opened to port %d\n",h,port);
+	printf("Ready to perform functions on q session\n");
+
+	kclose(h);
+	printf("Done\n");
+	return EXIT_SUCCESS;
+}
