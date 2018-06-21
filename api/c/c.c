@@ -3,7 +3,8 @@
 // s32: /usr/local/gcc-3.3.2/bin/gcc ../c/c/c.c c.o -lsocket -lnsl -lpthread
 // w32: cl  ../c/c/c.c c.lib ws2_32.lib
 #include"k.h"
-
+#include <stdio.h>
+/*
 int handle();
 
 int handle(char[20] host, int port){
@@ -11,6 +12,25 @@ int handle(char[20] host, int port){
   k(-c,"0N! 1+1",(K)0);//insert
   k(c,"",(K)0); // flush                              
   return c;}
+*/
+int handle(char *host,int port){
+        int c=khp(host,port);
+        k(-c,"a+:2",(K)0);
+        return 0;}
+
+int main(void){
+	printf("Initialisation of C to KDB API");
+
+	char *host;
+	int port;
+	printf("Enter host");
+	host = gets();
+	printf("Enter port");
+	port = gets();
+
+	int h = handle(host,port);
+	return 0;
+}
 
 /*
 #define Q(e,s) {if(e)return printf("%s\n",s),-1;}      //error

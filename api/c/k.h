@@ -12,8 +12,8 @@ typedef struct k0{signed char m,a,t;C u;I r;union{G g;H h;I i;J j;E e;F f;S s;st
 typedef struct{G g[16];}U;
 #define kU(x) ((U*)kG(x))
 #define xU ((U*)xG)
-extern K ku(U),knt(J,K),ktn(I,J),kpn(S,J);
-extern I setm(I),ver();
+extern K ku(U),ktn(I,J),kpn(S,J);
+extern I setm(I);
 #define DO(n,x)	{J i=0,_i=(n);for(;i<_i;++i){x;}}
 #else
 typedef struct k0{I r;H t,u;union{G g;H h;I i;J j;E e;F f;S s;struct k0*k;struct{I n;G G0[1];};};}*K;
@@ -68,9 +68,9 @@ extern V m9();
 #else
 extern V m9(V);
 #endif
-extern I khpunc(S,I,S,I,I),khpun(const S,I,const S,I),khpu(const S,I,const S),khp(const S,I),okx(K),ymd(I,I,I),dj(I);extern V r0(K),sd0(I),sd0x(I d,I f),kclose(I);extern S sn(S,I),ss(S);
-extern K ee(K),ktj(I,J),ka(I),kb(I),kg(I),kh(I),ki(I),kj(J),ke(F),kf(F),kc(I),ks(S),kd(I),kz(F),kt(I),sd1(I,K(*)(I)),dl(V*f,I),
- knk(I,...),kp(S),ja(K*,V*),js(K*,S),jk(K*,K),jv(K*k,K),k(I,const S,...),xT(K),xD(K,K),ktd(K),r1(K),krr(const S),orr(const S),dot(K,K),b9(I,K),d9(K),sslInfo(K x);
+extern I khpun(const S,I,const S,I),khpu(const S,I,const S),khp(const S,I),okx(K),ymd(I,I,I),dj(I);extern V r0(K),sd0(I),kclose(I);extern S sn(S,I),ss(S);
+extern K ktj(I,J),ka(I),kb(I),kg(I),kh(I),ki(I),kj(J),ke(F),kf(F),kc(I),ks(S),kd(I),kz(F),kt(I),sd1(I,K(*)(I)),dl(V*f,I),
+ knk(I,...),kp(S),ja(K*,V*),js(K*,S),jk(K*,K),jv(K*k,K),k(I,const S,...),xT(K),xD(K,K),ktd(K),r1(K),krr(const S),orr(const S),dot(K,K),b9(I,K),d9(K);
 #ifdef __cplusplus 
 }
 #endif
@@ -85,6 +85,7 @@ extern K ee(K),ktj(I,J),ka(I),kb(I),kg(I),kh(I),ki(I),kj(J),ke(F),kf(F),kc(I),ks
 #if defined(WIN32) || defined(_WIN32)
 #define nf (log(-1.0))
 #define wf (-log(0.0))
+#define isnan _isnan
 #define finite _finite
 extern double log(double);
 #else  
