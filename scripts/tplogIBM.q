@@ -8,7 +8,7 @@
 -1"INFO: Initialising tickerplant log reader to create new tplogFile";
 \d .tpr
 dir: @[.Q.opt;.z.x;""];
-dir: $[count dir;first dir `tplogFile;"sym",string .z.D];
+dir: $[count dir;first dir `tplogFile;string .z.D];
 /to change to use env config for tplog dir, use key to check if it exists
 dir: raze @[system;"find . -name \"",dir,"\"*";{-2"Cannot find tplogFile: ",.Q.s x;exit 1}];
 dir: `$":",2_dir;

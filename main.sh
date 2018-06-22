@@ -110,7 +110,7 @@ clear
 printHeader
 printf "Main Script for TickerPlant\n"
 printHeader
-printf "Script has 3 modes\n	1. Start:		To start processes\n	2. Shutdown:		To stop processes\n	3. Test:		To check on processes\n	4. LoadCSV:		To load csv into TickerPlant\n	5. reIngestTPLog:	To parse for IBM entries\n	6. changeConfig:	To change config ports\n"
+printf "Script has 3 modes\n	1. Start:		To start processes\n	2. Shutdown:		To stop processes\n	3. Test:		To check on processes\n	4. LoadCSV:		To load csv into TickerPlant\n	5. reIngestTPLog:	To parse for IBM entries\n	6. TPLogToHDB:		To create compressed HDB\n	7. changeConfig:	To change config ports\n"
 read -p 'Please input mode choice: ' choice
 printf "Choice is: %s \n" "$choice"
 printLines
@@ -209,13 +209,27 @@ elif [ "$choice" = "reIngestTPLog" ] || [ "$choice" = "5" ]
 then
 	echo "reIngestTPLog Mode"
 	printLines
-	read -p 'Please input tpFile name (do not input path): ' tpInput
-	info "Creating new tplogFile for $tpInput"
 	sourceQ
 	sourceConfig
+	printf "These are the available tplogs in $TPLOG_DIR \n"
+	ls $TPLOG_DIR
+	read -p 'Please input tpFile name (do not input path): ' tpInput
+	info "Creating new tplogFile for $tpInput"
 	printf "\n"
 	$q $SCRIPTS_DIR/tplogIBM.q -tplogFile $tpInput
-elif [ "$choice" = "changeConfig" ] || [ "$choice" = "6" ]
+elif [ "$choice" = "TPLogToHDB" ] || [ "$choice" = "6" ]
+then
+        echo "TPLogToHDB Mode"
+        printLines
+        sourceQ
+        sourceConfig
+	printf "These are the available tplogs in $TPLOG_DIR \n" 
+	ls $TPLOG_DIR
+        read -p 'Please input tpFile name (do not input path): ' tpInput
+        info "Creating compressed HDB for $tpInput"
+        printf "\n"
+        $q $SCRIPTS_DIR/compressHDB.q -tplogFile $tpInput	
+elif [ "$choice" = "changeConfig" ] || [ "$choice" = "7" ]
 then
 	echo "changeConfig Mode"
 	printLines
