@@ -4,6 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <time.h>
+#include <errno.h>
 
 #define EXIT_FAILURE 1
 #define EXIT_SUCCESS 0
@@ -21,54 +23,81 @@ int handleOK(int handle){
 	return 0;
 }
 
-char *str_replace(char *orig, char *rep, char *with) {
-    	//adapted from "https://stackoverflow.com/questions/779875/what-is-the-function-to-replace-string-in-c"
-	char *result; // the return string
-    	char *ins;    // the next insert point
-    	char *tmp;    // varies
-    	int len_rep;  // length of rep (the string to remove)
-    	int len_with; // length of with (the string to replace rep with)
-    	int len_front; // distance between rep and end of last rep
-    	int count;    // number of replacements
 
-    	// sanity checks and initialization
-    	if (!orig || !rep)
-        	return NULL;
-    	len_rep = strlen(rep);
-    	if (len_rep == 0)
-        	return NULL; // empty rep causes infinite loop during count
-    	if (!with)
-        	with = "";
-    	len_with = strlen(with);
-
-    	// count the number of replacements needed
-    	ins = orig;
-    	for (count = 0; tmp = strstr(ins, rep); ++count) {
-        	ins = tmp + len_rep;
-    	}
-
-    	tmp = result = malloc(strlen(orig) + (len_with - len_rep) * count + 1);
-
-    	if (!result)
-        	return NULL;
-
-	// first time through the loop, all the variable are set correctly
-	// from here on,
-    	// tmp points to the end of the result string
-    	// ins points to the next occurrence of rep in orig
-    	// orig points to the remainder of orig after "end of rep"
-    	while (count--) {
-        	ins = strstr(orig, rep);
-        	len_front = ins - orig;
-        	tmp = strncpy(tmp, orig, len_front) + len_front;
-        	tmp = strcpy(tmp, with) + len_with;
-        	orig += len_front + len_rep; // move to next "end of rep"
-    	}
-    	strcpy(tmp, orig);
-    	return result;
+// check result of remote call
+// it can be either 0(network error) or K object
+// if type of the object is -128(error) print error and release object.
+// K objects with type -128 exist only when calling from standalone C API and
+// not valid for shared objects
+I isRemoteErr(K x) {
+  if(!x) {
+    fprintf(stderr, "Network error: %s\n", strerror(errno));
+    return 1;
+  } else if(-128 == xt) {
+    fprintf(stderr, "Error message returned : %s\n", x->s);
+    r0(x);
+    return 1;
+  }
+  return 0;
 }
 
-const char* parseCSV(char *csv,int h){
+J castTime(struct tm *x) {
+ return (J)((60 * x->tm_hour + x->tm_min) * 60 + x->tm_sec) * 1000000000;
+}
+
+int parseTradeCSV(char *csv,int h){
+	//parse CSV, have to run push to feedhandler inbetween each line, this is not done yet
+	if (access(csv, F_OK) != -1){
+		FILE* stream = fopen(csv,"r");
+
+		char line[1024];
+		struct tradeData{
+			struct tm *time;
+			char *sym;
+			int size;
+			float price;
+		}tradeTmp;
+		int j = 0;
+		char *tmp;
+		char timeTmp[6];
+		K result, singleRow;
+				
+		while (fgets(line, 1024, stream)){
+			
+			if(line!=NULL){
+				tmp = line;
+				//timeTmp = strsep(&tmp,","); / - for debug
+				strptime(strsep(&tmp,","),"%X",&tradeTmp.time);
+				tradeTmp.sym = strsep(&tmp,",");
+				tradeTmp.size = atoi(strsep(&tmp,","));
+				tradeTmp.price = atof(strsep(&tmp,","));
+				
+				free(tmp);
+				/*if(j!=0){
+					singleRow = knk(4,kt(castTime(tradeTmp.time)), ks((S) tradeTmp.sym), kj(tradeTmp.size), kf(tradeTmp.price));
+					result = k(h,".u.upd", ks((S) "trade"), singleRow, (K) 0);
+					if(isRemoteErr(result)) {
+						return EXIT_FAILURE;
+					}
+					r0(result);
+				}*/
+				// - for debug
+				if(j!=0){
+					printf("time: %d:%d:%d, sym: %s, size: %d, price: %f\n",tradeTmp.time->tm_hour,tradeTmp.time->tm_min,tradeTmp.time->tm_sec,tradeTmp.sym,tradeTmp.size,tradeTmp.price);
+					//free(timeTmp);
+				}
+				j++;
+			}
+			
+		}
+		fclose(stream);
+		return NULL;
+	} else {
+		fprintf(stderr, "File is missing \n");
+	}
+}
+
+int parseQuoteCSV(char *csv,int h){
 	//parse CSV, have to run push to feedhandler inbetween each line, this is not done yet
 	if (access(csv, F_OK) != -1){
 		FILE* stream = fopen(csv,"r");
@@ -76,16 +105,20 @@ const char* parseCSV(char *csv,int h){
 		char line[1024];
 		while (fgets(line, 1024, stream)){
 			if(line!=NULL){
-				if(NULL !=str_replace(line,",",";")){
-				puts(str_replace(line,",",";"));
-				}
+				puts(line);
 			}
 		}
+		fclose(stream);
 		return NULL;
 	} else {
 		fprintf(stderr, "File is missing \n");
 	}
 }
+
+/*const int pushToQHandle(char *line,int h){
+	//use existing handle to push to tickerplant
+	
+}*/
 
 int handle(char *host,int port){
         int c=khp(host,port);
@@ -115,7 +148,8 @@ int main(void){
 	printf("Ready to perform functions on q session\n");
 	//k(-h,"a+:2",(K)0);
 	//run declared functions on h
-	parseCSV(csv,h);
+	//parseCSV(csv,h);
+	parseTradeCSV(csv,h);
 	kclose(h);
 	printf("Done\n");
 	return EXIT_SUCCESS;
