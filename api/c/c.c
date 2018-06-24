@@ -15,11 +15,11 @@ int handleOK(int handle){
 	if(handle > 0)
 		return 1;
 	if(handle == 0)
-		fprintf(stderr, "Authentication error %d\n", handle);
+		fprintf(stderr, "ERROR: Authentication error %d\n", handle);
 	else if(handle == -1)
-		fprintf(stderr, "Connection error %d\n", handle);
+		fprintf(stderr, "ERROR: Connection error %d\n", handle);
 	else if(handle == -2)
-		fprintf(stderr, "Time out error %d\n", handle);
+		fprintf(stderr, "ERROR: Time out error %d\n", handle);
 	return 0;
 }
 
@@ -41,92 +41,121 @@ I isRemoteErr(K x) {
   return 0;
 }
 
-J castTime(struct tm *x) {
- return (J)((60 * x->tm_hour + x->tm_min) * 60 + x->tm_sec) * 1000000000;
+J castTime(int hour,int min,int sec) {
+ return (J)((60 * hour + min) * 60 + sec) * 1000000000;
 }
 
 int parseTradeCSV(char *csv,int h){
-	//parse CSV, have to run push to feedhandler inbetween each line, this is not done yet
+	//parse CSV, feedhandling is perform between the lines
 	if (access(csv, F_OK) != -1){
 		FILE* stream = fopen(csv,"r");
-
+		printf("INFO: %s file has been opened and ready to be parsed\n",csv);
 		char line[1024];
 		struct tradeData{
-			struct tm *time;
-			char *sym;
+			int timeHH, timeMM, timeSS;
+			char sym[9];
 			int size;
-			float price;
+			int price;
 		}tradeTmp;
 		int j = 0;
 		char *tmp;
-		char timeTmp[6];
+		char *timeTmp;
 		K result, singleRow;
+		const char delimiters[] = ":,";
 				
 		while (fgets(line, 1024, stream)){
 			
 			if(line!=NULL){
-				tmp = line;
-				//timeTmp = strsep(&tmp,","); / - for debug
-				strptime(strsep(&tmp,","),"%X",&tradeTmp.time);
-				tradeTmp.sym = strsep(&tmp,",");
-				tradeTmp.size = atoi(strsep(&tmp,","));
-				tradeTmp.price = atof(strsep(&tmp,","));
+				//strtok might be a better choice but this was easier to understand coming from q
+				sscanf( line, "%d:%d:%d,%[^,],%d,%d", &tradeTmp.timeHH,&tradeTmp.timeMM,&tradeTmp.timeSS, tradeTmp.sym,&tradeTmp.size,&tradeTmp.price);
 				
-				free(tmp);
-				/*if(j!=0){
-					singleRow = knk(4,kt(castTime(tradeTmp.time)), ks((S) tradeTmp.sym), kj(tradeTmp.size), kf(tradeTmp.price));
+				
+				if(j!=0){
+					singleRow = knk(4,ktj(-KN,castTime(tradeTmp.timeHH,tradeTmp.timeMM,tradeTmp.timeSS)), ks((S) tradeTmp.sym), kj(tradeTmp.size), kf(tradeTmp.price));
 					result = k(h,".u.upd", ks((S) "trade"), singleRow, (K) 0);
 					if(isRemoteErr(result)) {
 						return EXIT_FAILURE;
 					}
+					//printf("%s\n",result->s);
 					r0(result);
-				}*/
-				// - for debug
-				if(j!=0){
-					printf("time: %d:%d:%d, sym: %s, size: %d, price: %f\n",tradeTmp.time->tm_hour,tradeTmp.time->tm_min,tradeTmp.time->tm_sec,tradeTmp.sym,tradeTmp.size,tradeTmp.price);
-					//free(timeTmp);
 				}
+				
+				// - for debug
+				/*if(j!=0){
+					//printf("timeInt: %lld\n",  castTime(tradeTmp.timeHH,tradeTmp.timeMM,tradeTmp.timeSS));
+					//printf("test: %s\n",tradeTmp.sym);
+					//printf("time: %d:%d:%d, sym: %s, size: %d, price: %d\n",tradeTmp.time.tm_hour,tradeTmp.time.tm_min,tradeTmp.time.tm_sec,tradeTmp.sym,tradeTmp.size,tradeTmp.price);
+					//printf("time: %s, sym: %s, size: %d, price: %f\n",tradeTmp.timeHH,tradeTmp.sym,tradeTmp.size,tradeTmp.price);
+					printf("time: %d:%d:%d, sym: %s , size: %d price: %d  \n",tradeTmp.timeHH,tradeTmp.timeMM,tradeTmp.timeSS,tradeTmp.sym,tradeTmp.size,tradeTmp.price);//tradeTmp.sym,tradeTmp.size,tradeTmp.price);
+					//free(timeTmp);
+				}*/
 				j++;
 			}
 			
 		}
 		fclose(stream);
-		return NULL;
+		printf("INFO: CSV parsed and sent to handle %d \n",h);
+		return EXIT_SUCCESS;
 	} else {
-		fprintf(stderr, "File is missing \n");
+		fprintf(stderr, "INFO: File is missing \n");
+		return EXIT_FAILURE;
 	}
 }
 
 int parseQuoteCSV(char *csv,int h){
-	//parse CSV, have to run push to feedhandler inbetween each line, this is not done yet
+	//parse CSV, push to feed
 	if (access(csv, F_OK) != -1){
 		FILE* stream = fopen(csv,"r");
-
+		printf("INFO: %s file has been opened and ready to be parsed\n",csv);
 		char line[1024];
+		struct quoteData{
+			int timeHH, timeMM, timeSS;
+			char sym[9];
+			int bidSize,bidPrice,askSize,askPrice;
+		}quoteTmp;
+		int j = 0;
+		char *tmp;
+		char *timeTmp;
+		K result, singleRow;
+		const char delimiters[] = ":,";
+				
 		while (fgets(line, 1024, stream)){
+			
 			if(line!=NULL){
-				puts(line);
+				//strtok might be a better choice but this was easier to understand coming from q
+				sscanf( line, "%d:%d:%d,%[^,],%d,%d,%d,%d", &quoteTmp.timeHH,&quoteTmp.timeMM,&quoteTmp.timeSS, quoteTmp.sym,&quoteTmp.bidSize,&quoteTmp.bidPrice,&quoteTmp.askSize,&quoteTmp.askPrice);
+				
+				if(j!=0){
+					singleRow = knk(6,ktj(-KN,castTime(quoteTmp.timeHH,quoteTmp.timeMM,quoteTmp.timeSS)), ks((S) quoteTmp.sym), kj(quoteTmp.bidSize), kf(quoteTmp.bidPrice), kj(quoteTmp.askSize), kf(quoteTmp.askPrice));
+					result = k(h,".u.upd", ks((S) "quote"), singleRow, (K) 0);
+					if(isRemoteErr(result)) {
+						return EXIT_FAILURE;
+					}
+					//printf("%s\n",result->s);
+					r0(result);
+				}
+				
+				j++;
 			}
+			
 		}
 		fclose(stream);
-		return NULL;
+		printf("INFO: CSV parsed and sent to handle %d \n",h);
+		return EXIT_SUCCESS;
 	} else {
-		fprintf(stderr, "File is missing \n");
+		fprintf(stderr, "INFO: File is missing \n");
+		return EXIT_FAILURE;
 	}
 }
 
-/*const int pushToQHandle(char *line,int h){
-	//use existing handle to push to tickerplant
-	
-}*/
-
 int handle(char *host,int port){
         int c=khp(host,port);
-	//k(-c,"a+:2",(K)0);
         return c;}
 
 int main(void){
+	//add print of line here//
 	printf("Initialisation of C to KDB API\n");
+	//add print of line here//
 	char i[20];
 	char host[20];
 	int port;
@@ -144,13 +173,13 @@ int main(void){
 	int h = handle(host,port);
 	if(!handleOK(h))
 		return EXIT_FAILURE;
-	printf("Handle %d opened to port %d\n",h,port);
-	printf("Ready to perform functions on q session\n");
-	//k(-h,"a+:2",(K)0);
+	printf("INFO: Handle %d opened to port %d\n",h,port);
+	printf("INFO: Ready to perform functions on q session\n");
 	//run declared functions on h
-	//parseCSV(csv,h);
-	parseTradeCSV(csv,h);
+	//require an if statement to read input to ensure that right function is applied to the right csv
+	//parseTradeCSV(csv,h);
+	parseQuoteCSV(csv,h);
 	kclose(h);
-	printf("Done\n");
+	printf("INFO: Complete\n");
 	return EXIT_SUCCESS;
 }
