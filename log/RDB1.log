@@ -1,5 +1,30 @@
-INFO: RDB1 ## 2018.06.11D05:05:46.085383000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB1 ## 2018.06.11D05:06:39.812881000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB1 ## 2018.06.11D05:10:27.769375000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB1 ## 2018.06.11D05:39:18.594061000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB1 ## 2018.06.11D05:39:27.144462000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: RDB1 ## 2018.06.24D14:02:05.031694000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: RDB1 ## 2018.06.24D14:04:19.986074000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.24T14:04:19.985;`limguanyu_08;`localhost;"127.0.0.1";`opened;7i;0Nv) 
+INFO: RDB1 ## 2018.06.24D14:04:21.937419000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!426032 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:04:29.588497000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!426032 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:05:29.555637000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!426032 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:09:15.524424000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!426032 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:09:23.805774000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!426032 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:09:34.783065000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!493616 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:23:41.941213000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!493616 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:23:54.250721000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!493616 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:29:39.537554000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!493616 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:29:41.564824000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!493616 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D14:29:48.316523000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!582640 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.24D15:06:56.725826000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.24T14:04:19.985;`limguanyu_08;`localhost;"127.0.0.1";`closed;7i;00:57:58) 
+INFO: RDB1 ## 2018.06.25D00:00:00.069187000 ## User:  ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!582640 67108864 67108864 0 0 3872534528 1034 34433 
+INFO: RDB1 ## 2018.06.25D09:36:18.124081000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T09:36:18.123;`limguanyu_08;`localhost;"127.0.0.1";`opened;7i;0Nv) 
+INFO: RDB1 ## 2018.06.25D09:36:20.628595000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!360560 67108864 67108864 0 0 3872534528 1071 35941 
+INFO: RDB1 ## 2018.06.25D09:36:24.217795000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!360560 67108864 67108864 0 0 3872534528 1071 35941 
+INFO: RDB1 ## 2018.06.25D09:37:00.568387000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T09:36:18.123;`limguanyu_08;`localhost;"127.0.0.1";`closed;7i;00:00:39) 
+INFO: RDB1 ## 2018.06.25D12:59:56.556578000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T12:59:56.556;`limguanyu_08;`localhost;"127.0.0.1";`opened;7i;0Nv) 
+INFO: RDB1 ## 2018.06.25D13:00:01.068393000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!399536 67108864 67108864 0 0 3872534528 1071 35941 
+INFO: RDB1 ## 2018.06.25D13:00:04.040031000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!399536 67108864 67108864 0 0 3872534528 1071 35941 
+INFO: RDB1 ## 2018.06.25D13:00:15.906040000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T12:59:56.556;`limguanyu_08;`localhost;"127.0.0.1";`closed;7i;00:00:18) 
+INFO: RDB1 ## 2018.06.25D13:51:49.374265000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;"";`;0Ni;0Nv) 
+INFO: RDB1 ## 2018.06.25D13:59:37.339381000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: RDB1 ## 2018.06.25D14:00:36.391990000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T14:00:36.391;`limguanyu_08;`localhost;"127.0.0.1";`opened;7i;0Nv) 
+INFO: RDB1 ## 2018.06.25D14:00:38.785315000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!373904 67108864 67108864 0 0 3872534528 735 27163 
+INFO: RDB1 ## 2018.06.25D14:01:05.129106000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T14:00:36.391;`limguanyu_08;`localhost;"127.0.0.1";`closed;7i;00:00:27) 
+INFO: RDB1 ## 2018.06.25D14:02:05.850533000 ## User:  ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!373904 67108864 67108864 0 0 3872534528 735 27163 
+INFO: RDB1 ## 2018.06.25D14:03:31.783175000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;"";`;0Ni;0Nv) 

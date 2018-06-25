@@ -1,0 +1,12 @@
+INFO: HDB ## 2018.06.24D14:02:13.127339000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: HDB ## 2018.06.25D00:00:00.071072000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T00:00:00.070;`limguanyu_08;`localhost;"127.0.0.1";`opened;6i;0Nv) 
+INFO: HDB ## 2018.06.25D00:00:00.071160000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!312080 67108864 67108864 0 0 3872534528 702 26262 
+INFO: HDB ## 2018.06.25D00:00:00.071589000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T00:00:00.070;`limguanyu_08;`localhost;"127.0.0.1";`closed;6i;00:00:00) 
+INFO: HDB ## 2018.06.25D00:00:00.072549000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T00:00:00.072;`limguanyu_08;`localhost;"127.0.0.1";`opened;6i;0Nv) 
+INFO: HDB ## 2018.06.25D00:00:00.072616000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!316208 67108864 67108864 0 0 3872534528 1021 34058 
+INFO: HDB ## 2018.06.25D00:00:00.072932000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T00:00:00.072;`limguanyu_08;`localhost;"127.0.0.1";`closed;6i;00:00:00) 
+INFO: HDB ## 2018.06.25D02:23:39.827589000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T02:23:39.827;`limguanyu_08;`localhost;"127.0.0.1";`opened;6i;0Nv) 
+INFO: HDB ## 2018.06.25D02:23:42.527483000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!316464 67108864 67108864 0 0 3872534528 1027 34227 
+INFO: HDB ## 2018.06.25D02:23:49.765423000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!316496 67108864 67108864 0 0 3872534528 1027 34227 
+INFO: HDB ## 2018.06.25D02:24:06.494111000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!317024 67108864 67108864 0 0 3872534528 1029 34293 
+INFO: HDB ## 2018.06.25D02:24:42.006256000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T02:23:39.827;`limguanyu_08;`localhost;"127.0.0.1";`closed;6i;00:00:58) 

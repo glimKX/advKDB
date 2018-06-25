@@ -1,35 +1,14 @@
-INFO: RDB2 ## 2018.06.11D05:05:48.164010000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB2 ## 2018.06.11D05:06:39.812693000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB2 ## 2018.06.11D05:10:29.789711000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB2 ## 2018.06.11D05:39:18.593877000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB2 ## 2018.06.11D05:39:29.167302000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
-INFO: RDB2 ## 2018.06.11D05:45:22.026966000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.11T05:45:22.026;`glim;`localhost;"127.0.0.1";`opened;7i;0Nv) 
-INFO: RDB2 ## 2018.06.11D05:45:27.164886000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431056 67108864 67108864 0 0 1047904256 1469 53864 
-INFO: RDB2 ## 2018.06.11D05:45:30.278799000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431056 67108864 67108864 0 0 1047904256 1469 53864 
-INFO: RDB2 ## 2018.06.11D05:45:30.917029000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431056 67108864 67108864 0 0 1047904256 1469 53864 
-INFO: RDB2 ## 2018.06.11D05:45:31.640110000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431056 67108864 67108864 0 0 1047904256 1469 53864 
-INFO: RDB2 ## 2018.06.11D05:45:32.251117000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:32.833031000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:33.564508000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:34.184702000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:34.769978000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:35.339145000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:35.902260000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:36.480359000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:37.062836000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:37.846151000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:38.583670000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:39.246070000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:39.900613000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:44.869993000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:45.864291000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:46.879659000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:47.850531000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:48.785815000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:49.566252000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:50.387504000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:51.163669000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:52.049553000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:45:53.661396000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:46:19.071793000 ## User: glim ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!431088 67108864 67108864 0 0 1047904256 1470 53887 
-INFO: RDB2 ## 2018.06.11D05:46:30.374957000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.11T05:45:22.026;`glim;`localhost;"127.0.0.1";`closed;7i;00:01:03) 
+INFO: RDB2 ## 2018.06.24D14:02:07.060860000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: RDB2 ## 2018.06.24D14:24:55.507699000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.24T14:24:55.507;`limguanyu_08;`localhost;"127.0.0.1";`opened;7i;0Nv) 
+INFO: RDB2 ## 2018.06.24D14:24:59.492636000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!346256 67108864 67108864 0 0 3872534528 905 31293 
+INFO: RDB2 ## 2018.06.24D15:06:56.725665000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.24T14:24:55.507;`limguanyu_08;`localhost;"127.0.0.1";`closed;7i;00:38:54) 
+INFO: RDB2 ## 2018.06.25D00:00:00.071688000 ## User:  ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!346256 67108864 67108864 0 0 3872534528 905 31293 
+INFO: RDB2 ## 2018.06.25D13:51:49.374106000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;"";`;0Ni;0Nv) 
+INFO: RDB2 ## 2018.06.25D13:59:39.290572000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;();`;0Ni;0Nv) 
+INFO: RDB2 ## 2018.06.25D14:00:06.852751000 ## Connection opened: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T14:00:06.852;`limguanyu_08;`localhost;"127.0.0.1";`opened;7i;0Nv) 
+INFO: RDB2 ## 2018.06.25D14:00:11.281336000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!318080 67108864 67108864 0 0 3872534528 723 26869 
+INFO: RDB2 ## 2018.06.25D14:00:19.700033000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!318080 67108864 67108864 0 0 3872534528 723 26869 
+INFO: RDB2 ## 2018.06.25D14:00:25.278367000 ## User: limguanyu_08 ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!318080 67108864 67108864 0 0 3872534528 723 26869 
+INFO: RDB2 ## 2018.06.25D14:01:05.128913000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(2018.06.25T14:00:06.852;`limguanyu_08;`localhost;"127.0.0.1";`closed;7i;00:00:54) 
+INFO: RDB2 ## 2018.06.25D14:02:05.851792000 ## User:  ## Memory Usage: `used`heap`peak`wmax`mmap`mphy`syms`symw!318080 67108864 67108864 0 0 3872534528 723 26869 
+INFO: RDB2 ## 2018.06.25D14:03:31.783736000 ## Connection closed: `dateTime`user`host`ipAddress`connection`handle`duration!(0Nz;`;`;"";`;0Ni;0Nv) 
