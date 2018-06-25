@@ -37,6 +37,7 @@ printLines()
 info "Initialising TickerPlant with predefined schemas"
 cd $SCRIPTS_DIR
 nohup $q tick.q tick/sym.q $TPLOG_DIR -p $TICK_PORT -t 1000 > /dev/null 2>&1 &
+#$q tick.q tick/sym.q $TPLOG_DIR -p $TICK_PORT -t 1000 
 sleep 2
 if [[ ! -z $(ps -ef | grep $TICK_PORT | grep tick.q|grep -v bash) ]]
 then

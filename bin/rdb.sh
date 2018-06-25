@@ -44,6 +44,7 @@ printLines()
 #	then
 cd $SCRIPTS_DIR
 		info "Initialising RDB1 and subscribing to trade and quote"
+		#$q tick/r.q :$TICK_PORT -table "trade;quote" -p $RDB1_PORT 
 		($q tick/r.q :$TICK_PORT -table "trade;quote" -p $RDB1_PORT > /dev/null 2>&1 &)
 		sleep 2
 		if [[ ! -z $(ps -ef|grep $RDB1_PORT|grep r.q|grep -v bash) ]]

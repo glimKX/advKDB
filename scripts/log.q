@@ -34,8 +34,8 @@
 .log.value:{@[{.log.out "User: ",string[.z.u]," ## Memory Usage: ",.Q.s1 .Q.w[];value x};x;{.log.err -1_.Q.s x;x}]};
 
 /adding logging message in evaluating ipc
-.z.pg:{$[10h=type x;.log.value x;`upd=first x;value x;.log.value x]};
-.z.ps:{$[10h=type x;.log.value x;`upd=first x;value x;.log.value x]};
+.z.pg:{$[10h=type x;.log.value x;first[x] like "*upd";value x;.log.value x]};
+.z.ps:{$[10h=type x;.log.value x;first[x] like "*upd";value x;.log.value x]};
 
 /shutdown function
 .log.shutdown:{.log.out "Shutdown Trigger from mainScript";exit 0};
