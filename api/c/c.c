@@ -6,9 +6,16 @@
 #include <unistd.h>
 #include <time.h>
 #include <errno.h>
+#include <libgen.h>
+#include <sys/utsname.h>
 
 #define EXIT_FAILURE 1
 #define EXIT_SUCCESS 0
+
+int printLines(){
+	printf ("+-------------------------------------+\n");
+	return 0;
+}
 
 int handleOK(int handle){
 	//handleOK function taken from c_api_for_KDB.pdf
@@ -143,7 +150,7 @@ int parseQuoteCSV(char *csv,int h){
 		printf("INFO: CSV parsed and sent to handle %d \n",h);
 		return EXIT_SUCCESS;
 	} else {
-		fprintf(stderr, "INFO: File is missing \n");
+		fprintf(stderr, "ERROR: File is missing \n");
 		return EXIT_FAILURE;
 	}
 }
@@ -154,21 +161,35 @@ int handle(char *host,int port){
 
 int main(void){
 	//add print of line here//
+	printLines();
 	printf("Initialisation of C to KDB API\n");
+	printLines();
 	//add print of line here//
+	struct utsname buffer;
 	char i[20];
-	char host[20];
+	char *host;
 	int port;
 	char csv[100];
+	char *csvFile;
 
-	printf("Enter host:");
-	gets(host);
-	printf("Enter port:");
-	gets(i) ;
-	port = atoi(i);
-	printf("Example of paths\n %s/advKDB/csvFiles/csvQuote.csv \n %s/advKDB/csvFiles/csvTrade.csv \n",getenv("HOME"),getenv("HOME"));
+	//printf("Enter host:");
+	//gets(host);
+	//instead of asking the user, we will get the env variable
+	uname(&buffer);
+	host = buffer.nodename;
+	if (host != NULL){
+		printf("Hostname is: %s\n",host);
+	}else{ 
+		printf("Hostname is empty\n");
+		exit;
+	}
+	//printf("Enter port:");
+	//gets(i) ;
+	port = atoi(getenv("TICK_PORT"));
+	printf("Example of paths\n %s/csvQuote.csv \n %s/csvTrade.csv \n",getenv("CSV_DIR"),getenv("CSV_DIR"));
 	printf("Enter full CSV Path:");
 	gets(csv);
+	printf("INFO: Opening handle with args (host:%s;port:%d)\n",host,port);
 
 	int h = handle(host,port);
 	if(!handleOK(h))
@@ -178,7 +199,15 @@ int main(void){
 	//run declared functions on h
 	//require an if statement to read input to ensure that right function is applied to the right csv
 	//parseTradeCSV(csv,h);
-	parseQuoteCSV(csv,h);
+	//parseQuoteCSV(csv,h);
+	printf("INFO: Working on csv file %s\n",basename(csv));
+	csvFile = basename(csv);
+	if (0==strncmp(csvFile,"csvQuote.csv",strlen(csvFile)))
+		parseQuoteCSV(csv,h);
+	else if (0==strncmp(csvFile,"csvTrade.csv",strlen(csvFile)))
+		parseTradeCSV(csv,h);
+	else
+		fprintf(stderr,"ERROR: csv is not in list of allowed csv\n");
 	kclose(h);
 	printf("INFO: Complete\n");
 	return EXIT_SUCCESS;

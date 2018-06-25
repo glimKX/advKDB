@@ -191,20 +191,44 @@ elif [ "$choice" = "LoadCSV" ] || [ "$choice" = "4" ]
 then
 	echo "Load CSV Mode"
 	printLines
-	read -p 'Please input csvPath: ' csvInput
-	info "Checking for running tickerplant"
-	runStatus=$(ps -ef | grep "\.q" | grep -v grep | grep tick.q | awk '{print $13}')
-	if [[ -z $runStatus ]]
-	then 
-		err "Tickerplant is not up, unable to push csv"
-		exit 1
-	else
-		sourceQ
-		sourceConfig
-		info "Pushing csv to tickerplant"
-		printf "\n"
-		$q $SCRIPTS_DIR/csvLoad.q :$runStatus -csv $csvInput
-	fi
+	printf "CSV Mode has 3 modes to push to tickerPlant\n	1.	q\n	2.	c (api)\n	3.	python (api)\n"
+	read -p 'Please input mode: ' csvMode
+	if [ "$csvMode" = "q" ] || [ "$csvMode" = "1" ]
+	then
+		info "q mode"
+		read -p 'Please input csvPath: ' csvInput
+		info "Checking for running tickerplant"
+		runStatus=$(ps -ef | grep "\.q" | grep -v grep | grep tick.q | awk '{print $13}')
+		if [[ -z $runStatus ]]
+		then 
+			err "Tickerplant is not up, unable to push csv"
+			exit 1
+		else
+			sourceQ
+			sourceConfig
+			info "Pushing csv to tickerplant"
+			printf "\n"
+			$q $SCRIPTS_DIR/csvLoad.q :$runStatus -csv $csvInput
+		fi
+	elif [ "$csvMode" = "c" ] || [ "$csvMode" = "2" ]
+	then
+		info "c mode"
+		info "Checking for running tickerplant"
+                runStatus=$(ps -ef | grep "\.q" | grep -v grep | grep tick.q | awk '{print $13}')
+		if [[ -z $runStatus ]]
+		then
+			err "Tickerplant is not up, unable to push csv"
+                        exit 1
+		else
+			sourceConfig
+			info "Starting c api to push to tickerplant"
+			$C_API_DIR/a.out
+			printf "\n"
+		fi
+	elif [ "$csvMode" = "python" ] || [ "$csvMode" = "3" ]
+        then
+                info "python mode"
+        fi
 elif [ "$choice" = "reIngestTPLog" ] || [ "$choice" = "5" ]
 then
 	echo "reIngestTPLog Mode"
