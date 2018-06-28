@@ -55,8 +55,10 @@ def openCSV(x):
 			for row in csvReader:
 				if i > 0:
                                         #need to make message into format below
-                                        #"value (`upd;`trade;(01:00:00;`abc;100;100))"
-					print(";".join(row))
+                                        #"value (`upd;`trade;("01:00:00:;"`$\"abc\"";"100";"100"))"
+                                        #IPCrow=("value (`.u.upd;`trade;("+(";".join(row))+"))")
+
+                                        #print(IPCrow)
 				i+=1
 	else:
 		err ("Input file cannot be found")
@@ -76,9 +78,11 @@ printLines()
 #need to obtain host and port env
 info("Attempt to open handle to port {} on hostname {}".format(5016,"localhost"))
 try:
-    h=kdb.q("localhost",5014,"pythonAPI")
+    h=kdb.q("localhost",5016,"pythonAPI")
     info("Handle opened with q-python instance {}".format(h))
 except:
     err("Unable to connect to q process")
     exit(1)
 openCSV(csvFile)
+#test
+h.k("show 1+1")
