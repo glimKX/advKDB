@@ -36,24 +36,34 @@ int handleOK(int handle){
 // if type of the object is -128(error) print error and release object.
 // K objects with type -128 exist only when calling from standalone C API and
 // not valid for shared objects
-/*I isRemoteErr(K x) {
+I isRemoteErr(K x) {
   if(!x) {
     fprintf(stderr, "Network error: %s\n", strerror(errno));
+    r0(x);
     return 1;
   } else if(-128 == xt) {
     fprintf(stderr, "Error message returned : %s\n", x->s);
     r0(x);
     return 1;
   }
+  r0(x);
   return 0;
-}*/
+}
 
 J castTime(int hour,int min,int sec) {
  return (J)((60 * hour + min) * 60 + sec) * 1000000000;
 }
 
 int handle(char *host,int port){
-	printf("Host: %s Port: %d\n",host,port);
+	printf("C lib: Host %s Port %d\n",host,port);
         int c=khp(host,port);
 	handleOK(c);
         return c;}
+
+int sendTradeList(int h,J time,char *sym,int size, float price){
+	K result, singleRow;
+	printf("handle: %d, time: %lld, sym: %s, size: %d, price: %f",h,time,sym,size,price);
+	singleRow = knk (4,ktj(-KN,time),ks((S) sym), kj(size),kf(price));
+	result = k (h,".u.upd",ks((S) "trade"),singleRow,(K)0);
+	return isRemoteErr(result);
+}
