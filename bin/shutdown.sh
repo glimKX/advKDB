@@ -198,6 +198,30 @@ shutdownHDB()
         fi
 }
 ###########################################################
+# Function: shutdownGateway
+# Description: shutdown Gateway
+###########################################################
+shutdownGateway()
+{
+	printLines
+        info "Shutting down Gateway Only"
+        printLines
+        info "Check for running Gateway"
+        if [[ -z $(ps -ef | grep "\.q" | grep gateway.q|grep -v grep) ]]
+        then
+                info "No running q process found"
+                info "Shutdown not required"
+                exit 0
+        else
+                info "Found running q processes"
+                for PID in $(ps -ef | grep "\.q" | grep gateway.q|grep -v grep | awk '{print $2}')
+                do
+																		                                info "Shutting down [$PID]"
+                         ps -ef | grep -w $PID | grep -v grep
+                         kill $PID
+                done																	        fi
+}
+###########################################################
 printHeader
 if [ "$1" = "ALL" ] || [ $# -eq 0 ]
 then
@@ -223,6 +247,10 @@ elif [ "$1" = "hdb" ]
 then
         shutdownHDB
         info "Finish Shutdown HDB"
+elif [ "$1" = "gateway" ]
+then
+	shutdownGateway
+        info "Finish Shutdown Gateway"
 fi
 printHeader
 exit 0
