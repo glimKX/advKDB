@@ -20,3 +20,8 @@ hdbHandle:hopen "J"$getenv `HDB_PORT;
 sourceForSym:{output:hdbHandle "10#'distinct value flip select sym from trade";
 	`func`output!(`sourceForSym;" " sv string raze output)
  }
+
+/selectFromTrade
+selectFromTrade:{output:hdbHandle "select from trade where sym = ",x;
+	`func`output!(`selectFromTrade;output)
+ }

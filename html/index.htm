@@ -76,6 +76,7 @@ function connect()
 	  wsTmp=e.data;
 	  wsJsonObj=JSON.parse(wsTmp);
 	  if (wsJsonObj.func == "sourceForSym"){parseForSym(wsJsonObj.output)}
+	  else if (wsJsonObj.func == "selectFromTrade"){parseForQTable(wsJsonObj.output)}
 	  else {out.value=e.data}
   }
   ws.onerror=function(e){out.value=e.data;}
@@ -94,6 +95,12 @@ function queryForSym()
   ws.send(query);
   return false;
 }
+function selectFromTrade(x)
+{
+  query="selectFromTrade[\"`"+x+"\"]";
+  ws.send(query);
+  return false;
+}
 function parseForSym(x)
 {
  x=x.split(" ");
@@ -106,11 +113,20 @@ function parseForSym(x)
  var instance = new SelectPure(".sym",
 	{
 	options:myOptions,
+	onChange:value => {selectFromTrade(value); }
 	}
  );
 }
+function parseForQTable(x)
+{
+  if (x.length > 0){
+  debug=x;
+  /use javascript to hide text box and show table
+  /to incorporate css to make table nice
+  }
+}
 var myOptions = [];
-
+var debug;
 </script>
 
 </body>
