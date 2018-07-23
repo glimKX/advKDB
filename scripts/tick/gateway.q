@@ -14,10 +14,10 @@ hdbHandle:hopen "J"$getenv `HDB_PORT;
 /rdbHandle:hopen "J"$getenv `RDB_PORT;
 
 /define .z.ws for websocket
-.z.ws:{neg[.z.w] .j.j value x}
+.z.ws:{neg[.z.w] .j.j @[{value x};x;{`func`output!(`error;"failed to process ",x," due to ",y)}x]}
 
 /sourceForSym
-sourceForSym:{output:hdbHandle "10#'distinct value flip select sym from trade";
+sourceForSym:{output:(hdbHandle "raze value flip 11#key desc select count i by sym from trade") except `$"BRK-A";
 	`func`output!(`sourceForSym;" " sv string raze output)
  }
 
