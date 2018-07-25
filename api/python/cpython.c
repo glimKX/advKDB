@@ -67,3 +67,12 @@ int sendTradeList(int h,J time,char *sym,int size, float price){
 	result = k (h,".u.upd",ks((S) "trade"),singleRow,(K)0);
 	return isRemoteErr(result);
 }
+
+int sendQuoteList(int h,J time,char *sym,int bidSize,float bidPrice, int askSize,float askPrice){
+	K result, singleRow;
+	printf("handle: %d, time: %lld, sym: %s, bidSize: %d, bidPrice: %f, askSize: %d, bidPrice: %f",
+	h,time,sym,bidSize,bidPrice,askSize,askPrice);
+	singleRow = knk (6,ktj(-KN,time),ks((S) sym), kj(bidSize),kf(bidPrice),kj(askSize),kf(askPrice));
+	result = k (h,".u.upd",ks((S) "quote"),singleRow,(K)0);
+	return isRemoteErr(result);
+}
