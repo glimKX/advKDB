@@ -37,6 +37,7 @@ printLines()
 cd $SCRIPTS_DIR 
 info "Initialising CEP and subscribing to trade and quote"
 ($q tick/cep.q :$TICK_PORT -func aggregration -p $CEP_PORT > /dev/null 2>&1 &)
+#$q tick/cep.q :$TICK_PORT -func aggregration -p $CEP_PORT
 sleep 2
 if [[ ! -z $(ps -ef|grep $CEP_PORT |grep -v grep|grep -v bash) ]]
 then 

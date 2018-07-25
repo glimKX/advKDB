@@ -14,7 +14,7 @@ hdbHandle:hopen "J"$getenv `HDB_PORT;
 /rdbHandle:hopen "J"$getenv `RDB_PORT;
 
 /define .z.ws for websocket
-.z.ws:{neg[.z.w] .j.j @[{value x};x;{`func`output!(`error;"failed to process ",x," due to ",y)}x]}
+.z.ws:{neg[.z.w] .j.j @[{.log.out .Q.s1 x;value x};x;{.log.err .Q.s1[x],.Q.s1[y];`func`output!(`error;"failed to process ",x," due to ",y)}x]}
 
 /sourceForSym
 sourceForSym:{output:(hdbHandle "raze value flip 11#key desc select count i by sym from trade")except `$"BRK-A";

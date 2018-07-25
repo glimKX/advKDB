@@ -31,7 +31,7 @@ if["vwap" in .Q.opt[.u.x]`func;
 if["aggregration" in .Q.opt[.u.x]`func;
 	.u.tSub:"`trade`quote";
 	cep:{$[0=type x;
-		x:distinct x 1;
+		x:x 1;
 		x:distinct x `sym];
  		aggreg:(select maxPrice:max price,minPrice:min price,tradedVol:sum size by sym from trade where sym in x) lj select maxBid:max bidPrice,minAsk:min askPrice by sym from quote where sym in x;
 		(`aggreg;value flip 0!aggreg)

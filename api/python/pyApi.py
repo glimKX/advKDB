@@ -61,7 +61,7 @@ def openCSV(handle,x):
                                     handle.castTime(row[0])
                                     row[2]=int(row[2])
                                     row[3]=float(row[3])
-                                    print(row)
+                                    handle.sendTradeMsg(handle.kdbTime,row[1],row[2],row[3])
 				i+=1
                         elif csvFile == "csvQuote.csv":
                             print("Pushing Quote Data")
@@ -72,7 +72,7 @@ def openCSV(handle,x):
                                     row[3]=float(row[3])
                                     row[4]=int(row[4])
                                     row[5]=float(row[5])
-                                    print(row)
+                                    handle.sendQuoteMsg(handle.kdbTime,row[1],row[2],row[3],row[4],row[5])
                                 i+=1
 	else:
 		err ("Input file cannot be found")
@@ -90,11 +90,11 @@ csvFile = raw_input('Enter CSV Path: ')
 validateArg(csvFile)
 printLines()
 #need to obtain host and port env
-info("Attempt to open handle to port {} on hostname {}".format(5016,"localhost"))
+info("Attempt to open handle to port {} on hostname {}".format(os.getenv("TICK_PORT"),"localhost"))
 try:
-    h=pyQ.kdbQ("localhost",5016)
+    h=pyQ.kdbQ("localhost",int(os.getenv("TICK_PORT")))
     info("Handle opened with q-python instance {}".format(h))
-except:
-    err("Unable to connect to q process")
+except Exception as e:
+    err("Unable to connect to q process " + str(e))
     exit(1)
 openCSV(h,csvFile)
