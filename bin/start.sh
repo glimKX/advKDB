@@ -181,7 +181,7 @@ sourceQ()
 	printLines
 	info "Sourcing for q"
 	printLines
-	export q=$(find ~ -name q | grep l32)
+	export q=$(find ~ -name q | grep l[6432])
 	if [[ ! -z "$q" ]]
 	then
         	info "Found q app $q"
