@@ -57,7 +57,7 @@ printLines()
 ###########################################################
 printChoices()
 {
-        printf "These are the followings choices for start mode\n	1.	ALL\n	2.	tickerplant\n	3.	rdb\n	4.	feed\n	5.	cep\n	6.	hdb\n"
+        printf "These are the followings choices for start mode\n	1.	ALL\n	2.	tickerplant\n	3.	rdb\n	4.	feed\n	5.	cep\n	6.	hdb\n	7.	gateway\n"
         return 0
 }
 ###########################################################
@@ -140,6 +140,9 @@ then
 	hdb|6)
 	./start.sh hdb
 	;;
+	gateway|7)
+	./start.sh gateway
+	;;
 	*)
 	err "No such choice exiting script"
 	exit 1
@@ -151,7 +154,7 @@ then
 	cd bin
 	printLines
 	printChoices
-	read -p 'Please input start mode choice: ' mode
+	read -p 'Please input shutdown mode choice: ' mode
 	case "$mode" in
 	'ALL'|'1')
 	./shutdown.sh ALL
@@ -171,6 +174,9 @@ then
 	'hdb'|'6')
         ./shutdown.sh hdb 
         ;;
+	'gateway'|'7')
+	./shutdown.sh gateway
+	;;
 	*)
 	err "No such choice exiting script"
 	exit 1

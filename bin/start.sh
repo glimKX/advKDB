@@ -153,6 +153,26 @@ startHDB()
         return 0
 }
 ###########################################################
+# Function: startGateway
+# Description: starts Gateway
+###########################################################
+startGateway()
+{
+        printLines
+        info "Starting GATEWAY"
+        printLines
+        info "Check for existing GATEWAY"
+        if [[ -z $(ps -ef | grep "\.q" | grep gateway.q|grep -v grep) ]]
+        then
+                info "No Existing Gateway found"
+                info "Starting Gateway"
+                bash gateway.sh
+        else
+                warn "Existing Gateway found, not starting Gateway"
+        fi
+        return 0
+}
+###########################################################
 # Function: sourceQ 
 # Description: source for Q 
 ###########################################################
@@ -161,7 +181,7 @@ sourceQ()
 	printLines
 	info "Sourcing for q"
 	printLines
-	export q=$(find ~ -name q | grep l32)
+	export q=$(find ~ -name q | grep l[6432])
 	if [[ ! -z "$q" ]]
 	then
         	info "Found q app $q"
@@ -208,6 +228,7 @@ then
 	startFeed
 	startCEP
 	startHDB
+	startGateway
 	info "Finish Starting ALL"
 elif [ "$1" = "tickerplant" ]
 then
@@ -244,6 +265,13 @@ then
         sourceConfig
         startHDB
         info "Finish Starting HDB"
+elif [ "$1" = "gateway" ]
+then
+	info "Starting Gateway Only"
+	sourceQ
+	sourceConfig
+	startGateway
+	info "Finish Starting Gateway"
 fi
 printHeader
 exit 0 

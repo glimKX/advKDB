@@ -1,8 +1,9 @@
+#!/usr/bin/env python
 #api python script
 import sys
 import csv
 import os.path
-import kdb
+import pyQ
 ######################
 # function: printLines
 # description: printLines
@@ -47,17 +48,32 @@ def validateArg(x):
 # description: opens csv file and parse through it, while performing actions 
 # assumes that first row is header 
 ######################
-def openCSV(x):
+def openCSV(handle,x):
 	i = 0
 	if os.path.isfile(x):	
 		with open(x, "rb") as csvfile:
 			csvReader=csv.reader(csvfile,delimiter=",")
-			for row in csvReader:
+                        csvFile=x.split("/")[-1]
+                        if csvFile == "csvTrade.csv":
+                            print("Pushing Trade Data")    
+			    for row in csvReader:
 				if i > 0:
-                                        #need to make message into format below
-                                        #"value (`upd;`trade;(01:00:00;`abc;100;100))"
-					print(";".join(row))
+                                    handle.castTime(row[0])
+                                    row[2]=int(row[2])
+                                    row[3]=float(row[3])
+                                    handle.sendTradeMsg(handle.kdbTime,row[1],row[2],row[3])
 				i+=1
+                        elif csvFile == "csvQuote.csv":
+                            print("Pushing Quote Data")
+                            for row in csvReader:
+                                if i > 0:
+                                    handle.castTime(row[0])
+                                    row[2]=int(row[2])
+                                    row[3]=float(row[3])
+                                    row[4]=int(row[4])
+                                    row[5]=float(row[5])
+                                    handle.sendQuoteMsg(handle.kdbTime,row[1],row[2],row[3],row[4],row[5])
+                                i+=1
 	else:
 		err ("Input file cannot be found")
 		exit(1)
@@ -67,18 +83,18 @@ def openCSV(x):
 
 printDouble()
 print ("Initialisation of Python Api script")
-print ("---Courtesy of qPy: Matt Warren---")
+print ("---Based off c api wrapped in python---")
 printDouble()
 print ("List of CSV\n {}/advKDB/csvFiles/csvTrade.csv\n {}/advKDB/csvFiles/csvQuote.csv".format(os.getenv("HOME"),os.getenv("HOME")))
 csvFile = raw_input('Enter CSV Path: ')
 validateArg(csvFile)
 printLines()
 #need to obtain host and port env
-info("Attempt to open handle to port {} on hostname {}".format(5016,"localhost"))
+info("Attempt to open handle to port {} on hostname {}".format(os.getenv("TICK_PORT"),"localhost"))
 try:
-    h=kdb.q("localhost",5014,"pythonAPI")
+    h=pyQ.kdbQ("localhost",int(os.getenv("TICK_PORT")))
     info("Handle opened with q-python instance {}".format(h))
-except:
-    err("Unable to connect to q process")
+except Exception as e:
+    err("Unable to connect to q process " + str(e))
     exit(1)
-openCSV(csvFile)
+openCSV(h,csvFile)
