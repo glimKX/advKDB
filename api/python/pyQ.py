@@ -1,6 +1,8 @@
 import ctypes
 import time
-_qpy = ctypes.CDLL('/home/limguanyu_08/advKDB/api/python/cpython.so')
+import os
+sharedLib=os.environ['PY_API_DIR']+"/cpython.so"
+_qpy = ctypes.CDLL(sharedLib)
 _qpy.handle.argtypes = (ctypes.POINTER(ctypes.c_char),ctypes.c_int)
 _qpy.sendTradeList.argtypes = (ctypes.c_int,ctypes.c_longlong,ctypes.POINTER(ctypes.c_char),ctypes.c_int,ctypes.c_float)
 _qpy.sendQuoteList.argtypes = (ctypes.c_int,ctypes.c_longlong,ctypes.POINTER(ctypes.c_char),ctypes.c_int,ctypes.c_float,ctypes.c_int,ctypes.c_float)
